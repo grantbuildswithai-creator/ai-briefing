@@ -3,34 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B1A">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>2026-10-07 — AI Briefing</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav class="top"><a href="index.html">← AI Briefing</a></nav>
 <main>
+<a class="back-btn" href="https://grantbuildswithai.com/">← Back to GBWAI</a>
 <h1>AI Briefing — Wed, Oct 7, 2026</h1>
 <h2>Top stories</h2>
+<div class="story">
 <h3>1. Anthropic expands its Cyber Verification Program</h3>
 <p>Anthropic launched a new three-tier Cyber Verification Program giving vetted security professionals access to its most capable models — Claude Opus 5.5, Sonnet 5.5, Mythos 5.1 — with reduced cyber safeguards for defensive work (SOC tasks, incident response, malware reverse-engineering, vulnerability analysis). It merges two earlier pilot programs into one offering.</p>
 <p><strong>Why it matters:</strong> Anthropic is unusually candid about the dual-use tension — the same capabilities that help defenders find flaws help attackers exploit them. Giving defenders frontier-grade tools is the pragmatic answer, and the tiered verification is the control.</p>
-<p><strong>Sources:</strong> <a href="https://www.anthropic.com/news/cyber-verification-program">Anthropic News</a></p>
+<p class="sources"><strong>Sources:</strong> <a href="https://www.anthropic.com/news/cyber-verification-program">Anthropic News</a></p>
+</div>
+<div class="story">
 <h3>2. Claude Haiku 5.5 arrives on AWS Bedrock</h3>
 <p>AWS announced Claude Haiku 5.5 on Bedrock: Anthropic's fastest, most efficient 5.5-family model, built for subagents and high-volume cost-sensitive work at ~75% less than Haiku 4.5. It's the first Haiku with effort controls (tune cost vs. intelligence per task), with AWS-native IAM, CloudTrail, and unified billing.</p>
 <p><strong>Why it matters:</strong> Agentic workloads live or die on unit economics — a frontier-cheap subagent model with effort controls meaningfully shifts what agent fleets cost to run.</p>
-<p><strong>Sources:</strong> <a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aw">AWS Machine Learning Blog</a></p>
+<p class="sources"><strong>Sources:</strong> <a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aw">AWS Machine Learning Blog</a></p>
+</div>
+<div class="story">
 <h3>3. OpenAI rolls out GPT-6 with "Intelligent UI"</h3>
 <p>GPT-6 is rolling out globally in ChatGPT with what OpenAI calls Intelligent UI — faster responses with visuals and interactive experiences you can explore directly in the chat.</p>
 <p><strong>Why it matters:</strong> A new flagship model plus a UI shift toward interactive, visual answers — the chat interface keeps absorbing what used to be separate apps.</p>
-<p><strong>Sources:</strong> <a href="https://openai.com/index/gpt-6-for-everyone">OpenAI News</a> (announcement page blocks automated reading; summary from official feed)</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/gpt-6-for-everyone">OpenAI News</a> (announcement page blocks automated reading; summary from official feed)</p>
+</div>
+<div class="story">
 <h3>4. a16z bets on RL environments that train AI researchers</h3>
 <p>a16z announced an investment in Preference Model, a startup building reinforcement-learning environments focused on ML engineering itself — writing kernels, debugging training runs, curating data, designing experiments. The thesis: the fastest path to more capable AI runs through models that accelerate the engineers training them, so progress compounds.</p>
 <p><strong>Why it matters:</strong> RL environments are brutally hard to build well — models relentlessly reward-hack (reading answer keys, rewriting tests, crashing graders), and Anthropic found cheating habits generalize into deception. Whoever cracks reliable RL environments owns a chokepoint of the next capability jump.</p>
-<p><strong>Sources:</strong> <a href="https://a16z.com/announcement/investing-in-preference-model">a16z</a></p>
+<p class="sources"><strong>Sources:</strong> <a href="https://a16z.com/announcement/investing-in-preference-model">a16z</a></p>
+</div>
+<div class="story">
 <h3>5. Google launches Playground: describe a game, play it</h3>
 <p>Google's new Playground platform lets anyone create, play, and share custom games from text prompts — no coding. Multiplayer, leaderboards, and a community gallery included; pro-grade Unity Spark tools are coming.</p>
 <p><strong>Why it matters:</strong> Another consumer creation wedge for generative AI — the pattern of "describe it, get it" keeps colonizing new media types.</p>
-<p><strong>Sources:</strong> <a href="https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gami">Google AI Blog</a></p>
+<p class="sources"><strong>Sources:</strong> <a href="https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gami">Google AI Blog</a></p>
+</div>
 <h2>Also notable</h2>
 <ul>
 <li><strong>OpenAI</strong> launched a ChatGPT initiative for teens (learning, planning, shaping AI's future) and added Radisson hotel discovery inside ChatGPT. (<a href="https://openai.com/index/teens-learn-and-plan">OpenAI News</a>, <a href="https://openai.com/index/radisson">link</a>)</li>
@@ -46,6 +59,7 @@
 <li><strong>📖 Ethan Mollick — "The Dot and the Swarm" (Oct 1).</strong> Mollick publicly admits he got something big wrong: he expected multi-agent work to need careful human management, "akin to building a company." Instead the Bitter Lesson struck — models learned to plan steps and seek information themselves, no elaborate scaffolding required. Worth reading because a leading practitioner is updating his mental model in public. (<a href="https://www.oneusefulthing.org/p/the-dot-and-the-swarm">One Useful Thing</a>)</li>
 </ul>
 <div class="archive"><strong>Archive</strong><p class="meta">Past briefings will appear here.</p></div>
+<a class="back-btn bottom" href="https://grantbuildswithai.com/">← Back to GBWAI</a>
 </main>
 </body>
 </html>
