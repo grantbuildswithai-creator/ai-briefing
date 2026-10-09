@@ -72,3 +72,12 @@ li { margin: 0.5rem 0; }
 }
 .archive ul { margin: 0.6rem 0 0.2rem; }
 .archive .meta { margin: 0.5rem 0 0; }
+.archive summary {
+  text-transform: uppercase; font-size: 13px; font-weight: 800;
+  letter-spacing: 2.5px; color: var(--cyan); cursor: pointer;
+  list-style: none;
+}
+.archive summary::-webkit-details-marker { display: none; }
+.archive summary::before { content: "▸ "; }
+.archive[open] summary::before { content: "▾ "; }
+.archive .truncated { margin: 0.5rem 0 0; }
