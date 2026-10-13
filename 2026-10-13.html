@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B1A">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>2026-10-13 — AI Briefing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
+<main>
+<a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+<h1>AI Briefing — Tue, Oct 13, 2026</h1>
+<h2>Top stories</h2>
+<div class="story">
+<h3>1. Meta launches Muse Wonder and Muse Wonder Full, its frontier agent models</h3>
+<p>Meta Superintelligence Labs shipped its second model family, Muse Wonder (fast frontier) and Muse Wonder Full (max-reasoning tier), pitched as state-of-the-art for personal and professional agentic work — navigating insurance claims, understanding leases, writing code. The models carry Active Memory (recalling what matters across conversations) and Active Focus (pushing through hard tasks, recovering from errors, checking in before important actions). Wonder is available today via the Meta Model API and Muse Code; Wonder Full is exclusive to Muse Code subscribers; Wonder will soon power the Muse personal agent for subscribers first. Third-party benchmarks put the family roughly at the frontier: scores of 52 and 56 on Artificial Analysis' Intelligence Index v4.3, up from 48 for Muse Spark 1.3, six weeks after that launch.</p>
+<p><strong>Why it matters:</strong> Roughly 14 months after MSL was formed to rebuild Meta's AI foundations, it now has a two-family lineup that reads like OpenAI's or Anthropic's naming ladder (Spark, then Wonder/Wonder Full) — and it's competing directly on the same frontier benchmarks. The agent framing, not chat, is the product thesis.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://about.fb.com/news/2026/10/introducing-muse-wonder-models/">Meta Newsroom</a>, [Latent Space [AINews]](https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder)</p>
+</div>
+<div class="story">
+<h3>2. Microsoft's Maia 300: custom inference silicon at gigawatt scale</h3>
+<p>Microsoft unveiled Maia 300, its third-generation custom AI accelerator — an inference chip with eight HBM4 stacks (288GB, 18TB/s), TSMC N2P compute chiplets, 950W TDP, 96 accelerators per 167kW rack. The substance is the deployment plan: multi-gigawatt Maia deployments starting 2027, making Maia the primary inference system for Copilot, Microsoft 365, and Azure AI services. Microsoft claims 40% more tokens per megawatt than leading GPU systems and up to 7x the rack throughput of Maia 200; Reuters reports more than a million chips could deploy in 2027.</p>
+<p><strong>Why it matters:</strong> This is the clearest declaration yet of a hyperscaler's NVIDIA-hedge: not a product you can buy, but a commitment to run most of Microsoft's own inference on its own silicon. The 40% figure is vendor-claimed against an unnamed GPU baseline — but the gigawatt-scale commitment is the signal.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://news.microsoft.com/maia-2026/">Microsoft AI</a></p>
+</div>
+<div class="story">
+<h3>3. a16z bets on TypeSafe AI — decision-native models for code</h3>
+<p>a16z announced an investment in TypeSafe AI, maker of Jev — a model that hands decisions directly to code as typed values instead of text, aimed at classification and decision tasks inside software. Jev reportedly hit 1 trillion generated tokens within 3 days of launch, at roughly 1/100th to 1/500th the cost of frontier models and 100x the speed of frontier-class accuracy for classification — with the output so small a16z says they "don't even bother charging for it."</p>
+<p><strong>Why it matters:</strong> a16z's thesis is a new direction: while the big labs chase human-like reasoning, "decision models" built to live inside code — native, typed, near-free — could be the wedge that makes AI ubiquitous in traditional software economics. It pairs with yesterday's a16z investment thesis on RL environments for ML engineering: the frontier isn't just bigger models.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://a16z.com/announcement/investing-in-typesafe-ai">a16z</a></p>
+</div>
+<div class="story">
+<h3>4. OpenAI's GPT models on Bedrock go global across APAC</h3>
+<p>AWS extended global cross-region inference for OpenAI GPT models on Amazon Bedrock to Thailand, Malaysia, Singapore, Indonesia, and Taiwan — letting customers serve OpenAI models from Bedrock's managed infrastructure with cross-region failover across those markets.</p>
+<p><strong>Why it matters:</strong> OpenAI-on-Bedrock is one of the weirder infrastructure stories of the year — a partnership between rivals that turns Bedrock into a multi-lab marketplace. The APAC expansion lands directly in our region (Indonesia included).</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan/">AWS Machine Learning Blog</a></p>
+</div>
+<h2>Also notable</h2>
+<ul>
+<li><strong>a16z</strong> hired Col. Jeffrey Glover and Greg Barbaccia (American Dynamism team). (<a href="https://a16z.com/welcome-col-jeffrey-glover-and-greg-barbaccia">a16z</a>, <a href="https://www.a16z.news/p/welcome-col-jeffrey-glover-and-greg">a16z News</a>)</li>
+<li><strong>AWS:</strong> deploy decision models with llama.cpp on SageMaker AI; multi-node inference with Ray LLM deep-learning containers. (<a href="https://aws.amazon.com/blogs/machine-learning/deploy-decision-models-with-llama-cpp-on-amazon-sagemaker-ai/">AWS blog</a>, <a href="https://aws.amazon.com/blogs/machine-learning/run-multi-node-inference-workloads-using-ray-llm-deep-learning-containers/">link</a>)</li>
+<li><strong>Amazon Science:</strong> new research on changing an AI model's architecture without retraining it from scratch. (<a href="https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch">Amazon Science</a>)</li>
+<li><strong>Quiet from the labs.</strong> No new items from Anthropic, OpenAI, Google, or The Batch since yesterday's run; xAI release notes unchanged.</li>
+</ul>
+<h2>Worth a listen / read</h2>
+<ul>
+<li><strong>🎧 AI Daily Brief (Oct 12) — "How to Go from AI Power User to AI Leader."</strong> An Operator's Cut with NLW and Nufar on the emerging career lane: turning individual AI fluency into team leverage. Cites KPMG/UT-Austin research that the highest-impact AI users treat the model as a reasoning partner — a skill that can apparently be taught at scale. Practical if you manage people who use AI. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Go-from-AI-Power-User-to-AI-Leader-e3qcev2">episode</a>)</li>
+<li><strong>🎧 AI Daily Brief (Oct 9) — "When AI Solves Your Life's Work."</strong> (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/When-AI-Solves-Your-Lifes-Work-e3q8kuq">episode</a>)</li>
+<li><strong>📖 Latent Space — "How Anthropic's Dynamic Workflows Coordinate Claude Agents."</strong> From AI Engineer NYC: Anthropic's new "Flows" let a lead agent design the multi-agent topology itself, so Claude fully orchestrates its own agent structure for ambitious workloads. The framing borrows from Unix: durable runtime infrastructure you own on your cloud. (<a href="https://www.latent.space/p/claude-dynamic-workflows">Latent Space</a>)</li>
+<li><strong>📖 Amazon Science — "Can we change an AI model's architecture without retraining it from scratch?"</strong> Research-direction read on architectural surgery without the full retraining bill. (<a href="https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch">Amazon Science</a>)</li>
+</ul>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-10-12.html">2026-10-12</a></li>
+<li><a href="2026-10-11.html">2026-10-11</a></li>
+<li><a href="2026-10-10.html">2026-10-10</a></li>
+<li><a href="2026-10-09.html">2026-10-09</a></li>
+<li><a href="2026-10-08.html">2026-10-08</a></li>
+<li><a href="2026-10-07.html">2026-10-07</a></li></ul></details>
+<a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+</main>
+</body>
+</html>
