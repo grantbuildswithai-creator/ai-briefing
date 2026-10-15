@@ -5,53 +5,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0B0B1A">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<title>2026-10-14 — AI Briefing</title>
+<title>2026-10-15 — AI Briefing</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
 <main>
 <a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
-<h1>AI Briefing — Wed, Oct 14, 2026</h1>
+<h1>AI Briefing — Thu, Oct 15, 2026</h1>
 <h2>Top stories</h2>
 <div class="story">
-<h3>1. Google ships Gemini 4 Argon, its new frontier model</h3>
-<p>Google released Gemini 4 Argon globally: latest frontier model for developers, enterprises, scientists, and consumers, billed as built for "deep work" on complex multi-step tasks — coding, finance, legal, cybersecurity, and science. Pricing is $2 per million input tokens / $10 output (95% off for cached input). Google claims Argon outperforms other frontier models on an internal benchmark spanning finance, coding, legal, and tax, and leans on its own deployment receipts: separating six million lines of legacy Chromium code in weeks, cutting internal agentic code rollbacks by nearly a third, and speeding Gemma 4 E2B inference 2.85x on A100. Argon is already available in Cursor, Devin, and GitHub Copilot.</p>
-<p><strong>Why it matters:</strong> Independent checks are already arriving — Latent Space notes CursorBench and other benchmarks "simply independently confirm their claims," with Cursor reporting coding performance on par with Claude Opus 5.5. One caveat from Artificial Analysis: listed rates double for some deployment modes, so published cost comparisons need care. This is Google's current answer to the frontier race, and the market is treating it as a genuine contender.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/">Google AI Blog</a>, [Latent Space [AINews]](https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon)</p>
+<h3>1. Modal crosses $1B run rate, raises $750M Series D at $15.75B</h3>
+<p>Modal, the serverless cloud built for AI workloads, crossed $1B in annualized run rate and announced a $750M Series D at a $15.75B valuation, led by Accel. Usage has tripled since its Series C — more than 15x year-over-year growth. The driver is Sandboxes, the execution environment for LLM-generated code launched in 2023, now a $300M run-rate product on its own: Modal has spun up close to 3 billion sandboxes, scaling to a million concurrent, serving background agents, reinforcement learning, and vibecoding platforms.</p>
+<p><strong>Why it matters:</strong> NYC's newest AI-infrastructure decacorn. The funding story is really an agent story — agents, not training runs, are driving the fastest-growing infrastructure demand.</p>
+<p class="sources"><strong>Sources:</strong> [Latent Space [AINews]](https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d)</p>
 </div>
 <div class="story">
-<h3>2. Anthropic opens a Singapore office and signs an AI-safety MOU with the Singapore government</h3>
-<p>Anthropic opened its fifth Asia-Pacific office in Singapore and signed a Memorandum of Understanding with Singapore's Ministry of Digital Development and Information, covering cooperation on AI safety, security, model evaluation, adoption research, and responsible adoption in the public and private sectors. Signed on the sidelines of Singapore International Cyber Week by co-founder Ben Mann and Permanent Secretary Kai Fong Chng, witnessed by Minister Josephine Teo. Anthropic notes Singapore ranks second of 121 countries in Claude.ai usage relative to population (~6x its size), with GovTech Singapore (1,500+ engineers on Claude Code), Grab, and DBS among local users.</p>
-<p><strong>Why it matters:</strong> Singapore is one of Anthropic's most active markets and a standard-setter on model testing — this is a lab formalizing a beachhead in a region where the Claude footprint is already deep, pairing commercial presence with a government safety-evaluation channel. Worth watching as a template for other APAC governments.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://www.anthropic.com/news/singapore-office-opening">Anthropic News</a></p>
+<h3>2. Anthropic publishes its 2026 US midterm election safeguards</h3>
+<p>Anthropic outlined how it's preparing Claude for this year's US midterms: measuring and preventing political bias, detecting misuse, and routing people to accurate voting information. It used Anthropic Insights to study how people actually use Claude for elections and politics, and says the work builds on the election-safeguards post it published ahead of the 2024 election.</p>
+<p><strong>Why it matters:</strong> With the midterms weeks away, this is a lab publishing its election playbook — accuracy-routing plus abuse detection rather than refusal-only — a template other labs will be compared against.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://www.anthropic.com/news/2026-us-midterms">Anthropic News</a></p>
 </div>
 <div class="story">
-<h3>3. Grok 4.7 lands on Amazon Bedrock, tuned for long-horizon agents</h3>
-<p>SpaceXAI's Grok 4.7 is now available on Amazon Bedrock with configurable reasoning effort, tool calling, structured output, and a 500K-token context window. Per SpaceXAI, it uses a larger base model than Grok 4.6 and a longer RL run weighted toward problems taking many hours; AWS's write-up builds a tool-calling agent and benchmarks it on three multi-step tasks (outage diagnosis, constrained maintenance scheduling, budgeted migrations), reporting 67 of 72 runs correct, with the lowest reasoning setting hitting 15 of 18 runs on roughly an eighth of the output tokens. The post walks through tuning the reasoning/cost trade-off per request.</p>
-<p><strong>Why it matters:</strong> Bedrock keeps widening into a multi-lab marketplace — OpenAI, Anthropic, and now xAI models side by side on managed infra. The tunable-reasoning knob is the practical story: agent builders get to dial deliberation versus token cost per request.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/">AWS Machine Learning Blog</a></p>
+<h3>3. a16z: long-running agents are "winning the relay race" in customer journeys (covered by 2 sources)</h3>
+<p>a16z published an essay arguing the real payoff for agentic AI is in high-value customer journeys — the kind that used to mean phone menus, hold music, and re-explaining your problem to three agents. Long-running agents that carry context across an entire journey, handing off to humans at the right moments like runners passing a baton, are framed as the next durable wedge for AI in customer operations.</p>
+<p><strong>Why it matters:</strong> Not a product launch — a framing piece from one of the most-read investor voices, and useful context for where agent startups are expected to find revenue beyond coding.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://a16z.com/winning-the-relay-race-long-running-agents-in-high-value-customer-journeys">a16z.com</a>, <a href="https://www.a16z.news/p/winning-the-relay-race-long-running">a16z News</a></p>
 </div>
 <h2>Also notable</h2>
 <ul>
-<li><strong>OpenAI:</strong> Higgsfield takes AI video from 1 minute to 10+ minutes on GPT-6 Astra with GPT-Image-2.5 visuals, teasing a path to voice filmmaking via GPT-Live. (<a href="https://openai.com/index/higgsfield-longer-videos-voice">OpenAI News</a>)</li>
-<li><strong>OpenAI:</strong> new analysis on agentic AI adoption across EU enterprises and SMBs — where deeper use could unlock value. (<a href="https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic">OpenAI News</a>)</li>
-<li><strong>AWS:</strong> agents that autonomously transact — Anchor Browser plus Bedrock AgentCore payments handle budgets, signing, and retries for x402-protected resources without exposing wallet credentials. (<a href="https://aws.amazon.com/blogs/machine-learning/building-agents-that-transact-with-anchor-browser-and-agentcore-payments/">AWS blog</a>)</li>
-<li><strong>AWS:</strong> Orca Security's Discovery AI agent converts plain-English questions into Sonar queries — 90% lower query cost, 75% lower latency vs baseline. (<a href="https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/">AWS blog</a>)</li>
-<li><strong>AWS:</strong> ShipStation Global's "Deckhand" IT help-desk agent on AgentCore resolved 97.5% of Slack channel queries in three months. (<a href="https://aws.amazon.com/blogs/machine-learning/how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore/">AWS blog</a>)</li>
-<li><strong>AWS:</strong> MoE kernel optimizations on SageMaker AI — up to 10% higher throughput, 9% faster time-to-first-token on H200. (<a href="https://aws.amazon.com/blogs/machine-learning/mixture-of-experts-kernel-engineering-on-amazon-sagemaker-ai/">AWS blog</a>)</li>
-<li><strong>a16z News:</strong> AI's $108B opportunity in specialty practices — up to $125K per physician per year without adding staff. (<a href="https://www.a16z.news/p/the-108-billion-ai-opportunity-for">a16z News</a>)</li>
-<li><strong>Meta Newsroom:</strong> tech companies join global law enforcement in a crackdown on West African scam networks. (<a href="https://about.fb.com/news/2026/10/meta-tech-companies-law-enforcement-crackdown-global-scam-networks/">Meta Newsroom</a>)</li>
-<li><strong>Meta Newsroom:</strong> "Your Algorithm, Your Words" — new ways to shape what you see on Facebook. (<a href="https://about.fb.com/news/2026/10/introducing-your-algorithm-facebook/">Meta Newsroom</a>)</li>
-<li><strong>AWS:</strong> managed entitlements now let you activate Bedrock private pricing offers across dozens of accounts at once. (<a href="https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/">AWS blog</a>)</li>
-<li><strong>Quiet from the labs.</strong> No new items from The Batch, a16z.com, xAI release notes, a16z YouTube, AI + a16z podcast, One Useful Thing, Microsoft AI, Amazon Science, or the a16z AI Policy Brief since yesterday's run.</li>
+<li><strong>OpenAI:</strong> four customer stories — Amp puts AI agents to work beyond code with OpenAI models; SentinelOne cuts malware analysis from weeks to hours; Third Moment Research runs 10,000 agents for 36+ hours; Block is building AI-powered security on OpenAI tech. (<a href="https://openai.com/index/amp-beyond-coding">OpenAI News</a>, <a href="https://openai.com/index/sentinelone">SentinelOne</a>, <a href="https://openai.com/index/third-moment-research">Third Moment</a>, <a href="https://openai.com/index/block-ai-powered-security">Block</a>)</li>
+<li><strong>Meta:</strong> a new survey finds more than three quarters of small business owners say AI makes them more productive — but most say they need more guidance. (<a href="https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/">Meta Newsroom</a>)</li>
+<li><strong>Meta:</strong> with Milan's Pinacoteca di Brera and EssilorLuxottica, expanding access to art through AI glasses. (<a href="https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/">Meta Newsroom</a>)</li>
+<li><strong>Meta:</strong> WhatsApp guest calling — you can now invite anyone to a WhatsApp call. (<a href="https://about.fb.com/news/2026/10/introducing-whatsapp-guest-calling/">Meta Newsroom</a>)</li>
+<li><strong>AWS:</strong> four ML blog posts — self-improving document processing with Bedrock AgentCore; generating presentations with AgentCore; Tamnoon's AI-powered cloud security remediation on Bedrock; deploying and evaluating models with SageMaker JumpStart. (<a href="https://aws.amazon.com/blogs/machine-learning/build-self-improving-document-processing-using-amazon-bedrock-agentcore/">AWS blog</a>, <a href="https://aws.amazon.com/blogs/machine-learning/generate-presentations-with-amazon-bedrock-agentcore/">presentations</a>, <a href="https://aws.amazon.com/blogs/machine-learning/how-tamnoon-built-ai-powered-cloud-security-remediation-with-amazon-bedrock/">Tamnoon</a>, <a href="https://aws.amazon.com/blogs/machine-learning/deploy-and-evaluate-models-with-amazon-sagemaker-jumpstart/">JumpStart</a>)</li>
+<li><strong>Quiet from the labs.</strong> No new items from The Batch, xAI release notes, a16z YouTube, AI + a16z podcast, Google AI Blog, One Useful Thing, Microsoft AI, Amazon Science, or the a16z AI Policy Brief since yesterday's run.</li>
 </ul>
 <h2>Worth a listen / read</h2>
 <ul>
-<li><strong>🎧 AI Daily Brief (Oct 13) — "Why Muse Wonder Is Dividing AI Users."</strong> NLW on the gap between benchmark scores and real-world results for Meta's new models, the Wonder vs. Wonder Full distinction, and what mixed early reactions reveal about how to evaluate AI tools. Headlines: faster Claude models, a possible Sora revival, and acquisition talks involving Amazon and Nvidia. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Muse-Wonder-Is-Dividing-AI-Users-e3qf7l6">episode</a>)</li>
-<li><strong>🎧 Latent Space — "Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy."</strong> First robotics pod with Dyna Robotics' chief scientist on "World Action Models" and the next frontier of physical AI. (<a href="https://www.latent.space/p/dyna">Latent Space</a>)</li>
+<li><strong>🎧 AI Daily Brief (Oct 14) — "What Gemini 4 Argon Is Actually Good For."</strong> NLW digs past the launch headlines into what Google's new frontier model is genuinely strong at, two days after its global rollout. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/What-Gemini-4-Argon-Is-Actually-Good-For-e3qguhf">episode</a>)</li>
+<li><strong>📖 Latent Space — "Crossing the Threshold: How OpenAI and Anthropic Approach Autonomy and Safety in Financial Agents."</strong> Notes from AI Engineer New York: OpenAI's Joseph Kim, Head of ChatGPT for Financial Services, on the "threshold phenomenon" — the point where agents get reliable enough to delegate real work to — and his prediction that agents will do "investment idea generation and trading" by 2027. (<a href="https://www.latent.space/p/crossing-the-threshold">Latent Space</a>)</li>
+<li><strong>🎧 Latent Space — "Lab-in-the-Loop at Compute Speed."</strong> A robotics/life-sciences episode with Ian Quigley of Leash Bio on closing the loop between compute and wet-lab experiments. (<a href="https://www.latent.space/p/lab-in-the-loop-at-compute-speed">Latent Space</a>)</li>
 </ul>
-<details class="archive"><summary>Archive</summary><ul><li><a href="2026-10-13.html">2026-10-13</a></li>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-10-14.html">2026-10-14</a></li>
+<li><a href="2026-10-13.html">2026-10-13</a></li>
 <li><a href="2026-10-12.html">2026-10-12</a></li>
 <li><a href="2026-10-11.html">2026-10-11</a></li>
 <li><a href="2026-10-10.html">2026-10-10</a></li>
