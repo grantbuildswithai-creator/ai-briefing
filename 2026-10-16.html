@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B1A">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>2026-10-16 — AI Briefing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
+<main>
+<a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+<h1>AI Briefing — Fri, Oct 16, 2026</h1>
+<h2>Top stories</h2>
+<div class="story">
+<h3>1. Meta releases Muse Spark Open, the top-scoring US open-weight model (covered by 2 sources)</h3>
+<p>Meta released Muse Spark Open, an 816B-total / 42B-active mixture-of-experts model with a 1M-token context window and multimodal input (text, image, video, audio), aimed at coding, long-horizon agents, and multi-step reasoning. Artificial Analysis scores it 39 on its Intelligence Index — first among US open-weight models, but still behind China's GLM-5.3 (45) and Kimi K3 (44). The weights ship under a custom "Muse Model License" requiring "Built with Muse Spark Open" attribution and a separate agreement for model-as-a-service businesses with over $20M in revenue. It's live on Together, Fireworks, and Baseten at $1.25/$4.25 per million input/output tokens, and now deployable inside your own AWS account via SageMaker JumpStart.</p>
+<p><strong>Why it matters:</strong> The US–China open-model gap is narrowing but not closed — and the license strings show the tension between open weights and commercial control. Notably, the model ranks last among the nine top open models on Artificial Analysis's four agentic evaluations, so agentic performance is the obvious target for the next iteration.</p>
+<p class="sources"><strong>Sources:</strong> [Latent Space [AINews]](https://www.latent.space/p/ainews-agents-disprove-polysemanticity), <a href="https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazo">AWS Machine Learning Blog</a></p>
+</div>
+<div class="story">
+<h3>2. A real interpretability breakthrough? Goodfire's Nick Cammarata claims agents "disprove polysemanticity"</h3>
+<p>Nick Cammarata of Goodfire published results showing that many known cases of polysemanticity and superposition — the tangled "knots" of weights that resist human interpretation — fall to further agentic analysis. TLDR: neural networks are not tangled knots; you can study their neurons directly without first "unfolding" them with a second model. Roughly 90% of neurons in Qwen-32B have one job. The claim is getting enthusiastic reception in the alignment community: interpretability could become a "normal science."</p>
+<p><strong>Why it matters:</strong> Interpretability is arguably the most important scientific problem in AI safety — alignment is hard to solve if you can't see what the model is doing. If this replicates and scales, it's one of the most significant results of the year.</p>
+<p class="sources"><strong>Sources:</strong> [Latent Space [AINews]](https://www.latent.space/p/ainews-agents-disprove-polysemanticity)</p>
+</div>
+<div class="story">
+<h3>3. OpenAI brings GPT-Rosalind to academic labs with free sponsored access</h3>
+<p>OpenAI launched the Rosalind Academic Plan: eligible academic labs get sponsored access to GPT-Rosalind, its dedicated life-sciences model, including up to 30 Business Standard seats at no cost for up to 12 months. Access to the model itself requires trusted-access approval, and research data shared through the plan is not used to train OpenAI's models by default. The model targets drug design, antibody and vaccine design, diagnostics, genetic-disease work, and crop resilience — sensitive biology work under safeguards designed for legitimate research.</p>
+<p><strong>Why it matters:</strong> Frontier bio-AI capability is flowing into universities — accelerating basic research while testing a dual-use governance model (trusted access plus no training on research data) that other labs may copy.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/introducing-the-rosalind-academic-plan">OpenAI News</a></p>
+</div>
+<div class="story">
+<h3>4. Anthropic gives independent evaluator METR employee-like access</h3>
+<p>Anthropic announced it's embedding a team from METR — the nonprofit that evaluates frontier AI models — with company hardware, office space, and access to internal tools and systems roughly on par with its own risk-assessment teams. METR will publish its analysis of Anthropic's risk levels, incidents, and practices; Anthropic can't veto publication, though it can require redaction of narrow categories (customer data, privileged information, model architectures). The engagement is the deepest of a three-tier access model Anthropic is developing for independent evaluators — the bank-supervision analogy: resident examiners inside the largest banks.</p>
+<p><strong>Why it matters:</strong> This is the most serious attempt yet at independent, embedded oversight of a frontier lab — moving past narrowly scoped evals toward something like a resident-examiner regime for AI safety.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://www.anthropic.com/news/an-update-on-independent-evaluators">Anthropic News</a></p>
+</div>
+<h2>Also notable</h2>
+<ul>
+<li><strong>AI Daily Brief headlines (Oct 15):</strong> Anthropic's revenue surge; CoreWeave's debt troubles; Jensen Huang on AI safety. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-the-Latest-AI-Leap-Is-Disrupting-Business-Models-e3qiqv8">episode</a>)</li>
+<li><strong>a16z (covered by 3 sources):</strong> launched SAIF, a new 501(c)(3) nonprofit delivering AI and cybersecurity tools, hands-on support, and training to US public institutions — small cities, school districts, rural hospitals. (<a href="https://a16z.com/introducing-securing-americas-infrastructure-foundation">a16z.com</a>, <a href="https://www.a16z.news/p/introducing-securing-americas-infrastructure">a16z News</a>, <a href="https://a16zpolicy.substack.com/p/securing-americas-infrastructure">a16z AI Policy Brief</a>)</li>
+<li><strong>OpenAI:</strong> with Sullivan & Cromwell, built Agreement Analyzer, an AI tool for identifying issues in draft agreements. (<a href="https://openai.com/index/sullivan-cromwell">OpenAI News</a>)</li>
+<li><strong>OpenAI:</strong> Study Mode can now support active step-by-step learning in Brazilian Portuguese, timed for Teachers' Day. (<a href="https://openai.com/index/teaching-students-to-think-and-learn-through-questions">OpenAI News</a>)</li>
+<li><strong>AWS:</strong> "Trust in Depth" — a layered framework (scope, know, bound, observe, prove) for giving agents more autonomy without losing control. (<a href="https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-w">AWS blog</a>)</li>
+<li><strong>a16z News:</strong> "The $108 Billion AI Opportunity for Specialty Practices" — four AI plays worth up to $125K (10%) per physician per year. (<a href="https://www.a16z.news/p/the-108-billion-ai-opportunity-for">a16z News</a>)</li>
+<li><strong>Quiet from the labs.</strong> No new items from a16z YouTube, AI + a16z podcast, Google AI Blog, One Useful Thing, Microsoft AI, Amazon Science, or xAI release notes (listing page returned no dated entries) since yesterday's run.</li>
+</ul>
+<h2>Worth a listen / read</h2>
+<ul>
+<li><strong>🎧 AI Daily Brief (Oct 15) — "How the Latest AI Leap Is Disrupting Business Models."</strong> NLW on how the latest capability jump is forcing companies to rethink their business models — from Adobe clones to one-person game studios — plus the day's headlines: Anthropic's revenue surge, CoreWeave's debt troubles, and Jensen Huang on AI safety. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-the-Latest-AI-Leap-Is-Disrupting-Business-Models-e3qiqv8">episode</a>)</li>
+<li><strong>📖 a16z News — "Wallet Wars."</strong> Personal agents have arrived, setting off a race for who controls how they spend consumers' money. Stripe's Link, Shopify's Shop Pay, and PayPal are competing to be the credential layer for agent payments; the piece draws on decades of payment-tokenization precedent to argue agents are the next evolution of separating "who pays" from "who can initiate a payment." (<a href="https://www.a16z.news/p/wallet-wars">a16z News</a>)</li>
+<li><strong>📖 The Batch (issue 374) — OpenAI's DevDay, Google's first Gemini 4 model, Black Forest Labs dives into robots.</strong> Plus Andrew Ng's piece on agents driving demand for compute, storage, and networking — one of his agents makes 5–10K web search calls a day, and tool calls, not just tokens, are becoming the bottleneck. (<a href="https://www.deeplearning.ai/the-batch/issue-374">The Batch</a>)</li>
+</ul>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-10-15.html">2026-10-15</a></li>
+<li><a href="2026-10-14.html">2026-10-14</a></li>
+<li><a href="2026-10-13.html">2026-10-13</a></li>
+<li><a href="2026-10-12.html">2026-10-12</a></li>
+<li><a href="2026-10-11.html">2026-10-11</a></li>
+<li><a href="2026-10-10.html">2026-10-10</a></li>
+<li><a href="2026-10-09.html">2026-10-09</a></li>
+<li><a href="2026-10-08.html">2026-10-08</a></li>
+<li><a href="2026-10-07.html">2026-10-07</a></li></ul></details>
+<a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+</main>
+</body>
+</html>
