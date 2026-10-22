@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B1A">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>2026-10-22 — AI Briefing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
+<main>
+<a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+<h1>AI Briefing — Thu, Oct 22, 2026</h1>
+<h2>Top stories</h2>
+<div class="story">
+<h3>1. Patch the Planet: OpenAI coordinates disclosure of PHP2Shell, two critical PHP flaws</h3>
+<p>OpenAI announced Patch the Planet, a program that connects security researchers, maintainers, and incident responders to coordinate disclosure of critical vulnerabilities in widely used open source. Its first result: two critical memory-corruption flaws in PHP itself — CVE-2026-109618 and CVE-2026-109619, dubbed PHP2Shell — affecting a language that powers roughly 70% of the web. The flaws were found independently by Calif researcher Ryan Austin using OpenAI's GPT-5.6 Sol, and by Wiz (using Gemini 4 Argon, GPT-5.6 Sol, and its own Wiz Atlas tool). Researchers demonstrated pre-authentication remote code execution against WordPress, Drupal, and Joomla, plus "Heartbleed-style" remote memory disclosure against PHP applications generally. After a two-month coordinated response with PHP's maintainers, Cloudflare, and others, OpenAI shipped a PHP version checker as a Codex skill and is publishing a proposed AI-era disclosure framework — alongside a $1 billion commitment in subsidized compute for defenders, focused on under-resourced organizations protecting essential services.</p>
+<p><strong>Why it matters:</strong> This is the promised security-audit era arriving ahead of the defenses: frontier models found a Heartbleed-class bug before attackers did, and OpenAI says it expects findings to "increase sharply in the coming months." The race is now between disclosure machinery and exploit generation — both running on the same class of models. Latent Space's AINews notes the PHP ecosystem response was "the developer community responding in its most ideal form," but cautions the researcher RCE claims are on specific CMS demos, not a proven blanket-exploitable path.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities">OpenAI News</a> · [Latent Space [AINews]](https://www.latent.space/p/ainews-openais-patch-the-planet-program)</p>
+</div>
+<div class="story">
+<h3>2. OpenAI models are coming to Google Cloud's Model Garden</h3>
+<p>OpenAI and Google Cloud are partnering to bring OpenAI's frontier models and Codex workflows into Google Cloud's Model Garden, purchasable through the Google Cloud Marketplace — with enterprises able to draw down existing GCP spend commitments. The pitch is regulated-industry access: Google's access controls, data governance, and infrastructure around OpenAI's models. Models will also surface in Google Antigravity and the Gemini Agent. OpenAI notes Microsoft remains its primary cloud partner.</p>
+<p><strong>Why it matters:</strong> The model-distribution layer keeps fracturing: frontier capability is increasingly bought through whichever cloud commit a company already holds, not through a lab's own channel. For enterprises, that's procurement convenience; for OpenAI, it's another route to workloads that already live on GCP — and a further step in the Microsoft/Google split of its enterprise surface.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/openai-models-google-cloud">OpenAI News</a></p>
+</div>
+<div class="story">
+<h3>3. OpenAI, PerturbAI, and Scripps deploy thousands of GPT-Rosalind agents on brain-cell data</h3>
+<p>OpenAI, PerturbAI, and Scripps Research ran thousands of AI agents powered by GPT-Rosalind in parallel over the Tahoe 100M dataset — gene-disruption effects across millions of mouse-brain cells — each agent investigating a disruption, analyzing cellular responses, searching the literature, and proposing explanations. The combined output was a "reasoning atlas" linking genes, cellular effects, publications, and hypotheses in 32 minutes, surfacing unexpected biological connections relevant to Alzheimer's and Parkinson's research directions.</p>
+<p><strong>Why it matters:</strong> Yesterday's Orchestra Bio acquisition was the platform bet; this is the demonstration: agentic swarms compressing the literature-connection step of biology, which has always been the human-scale bottleneck. The open question is validation — leads are cheap, wet-lab confirmation is not — but the "32 minutes" number will be the one every drug program now asks to beat.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/scaling-ai-research-for-complex-biological-data">OpenAI News</a></p>
+</div>
+<div class="story">
+<h3>4. ChatGPT Ads expands to 26 more countries; 100,000+ advertisers in eight months</h3>
+<p>ChatGPT Ads is now available in 89 countries total, adding 26 including Argentina, Chile, Colombia, Peru, Nigeria, South Africa, Serbia, Ukraine, Cambodia, Bangladesh, and Pakistan, following earlier launches in Mexico and Brazil. OpenAI says over 100,000 advertisers have run campaigns since launch roughly eight months ago, against 1.2 billion weekly users. Ads remain confined to the Free and Go plans; Plus, Pro, and Enterprise stay ad-free.</p>
+<p><strong>Why it matters:</strong> The conversion business is scaling fast — 100k advertisers in eight months is a real ad platform, not an experiment. The ad-free paid tiering is the balancing act: monetize the free majority without pushing the users who pay. Watch whether ad-supported usage starts shaping product behavior (prompts optimized for commercial intent) — that would be the quiet second-order effect.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/chatgpt-ads-expands-26-new-countries">OpenAI News</a></p>
+</div>
+<h2>Also notable</h2>
+<ul>
+<li><strong>Anthropic:</strong> christopher stubbs joins Anthropic's Long Term Benefit Trust — the governance body that stewards its mission. (<a href="https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust">Anthropic News</a>)</li>
+<li><strong>OpenAI</strong> published how it works with distribution partners to enforce consistent safeguards and clarify usage policies ("Broad access through consistent standards"), plus an AT&T case study on rethinking in-house legal intake. (<a href="https://openai.com/index/broad-access-through-consistent-standards">OpenAI News</a>, <a href="https://openai.com/index/att-legal">link</a>)</li>
+<li><strong>a16z News:</strong> "Why Hardware Specialization is Back" — the old general-purpose-vs-specialized chip debate returns under new constraints. (<a href="https://www.a16z.news/p/why-hardware-specialization-is-back">a16z News</a>)</li>
+<li><strong>a16z YouTube:</strong> "Why Frontier Models Still Can't Parse a PDF" — a16z video on a stubborn capability gap. (<a href="https://www.youtube.com/watch?v=xuczlbVVLsQ">a16z YouTube</a>)</li>
+<li><strong>Microsoft AI:</strong> AI helping the NHS rethink patient care — pre-hospital triage use case. (<a href="https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care/">Microsoft AI</a>)</li>
+<li><strong>AWS ML Blog:</strong> five production challenges in multi-agent systems (via open-source Deep Insight); Qwen3 training on Trainium with torchtitan; Quick on PrivateLink; the Adaptive Agentic Intelligence Framework routing local SLMs vs Bedrock cloud models; a Quick-based nonprofit case study. (<a href="https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insi">AWS ML Blog</a>)</li>
+<li>Quiet day: no new items from The Batch, a16z.com, xAI release notes, AI + a16z podcast, Google AI Blog, One Useful Thing, Amazon Science, Meta Newsroom, or the a16z AI Policy Brief beyond the item below.</li>
+</ul>
+<h2>Worth a listen / read</h2>
+<ul>
+<li><strong>🎧 AI Daily Brief (Oct 21) — "How AI Is Changing What Work Means."</strong> NLW opens with Citrini Research, a financial research firm using AI to design proteins targeting scorpion venom — and the bigger questions it raises: who gets to do science, whether AI labs will compete with their own customers, and how far companies can stretch past their traditional expertise. Headlines: Muse hits 10 million US downloads, Gemini gets more personal in Android Auto, and Anthropic's financial disclosures spark fresh valuation debates. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-AI-Is-Changing-What-Work-Means-e3qsa48">episode</a>)</li>
+<li><strong>📖 Latent Space — "Claude Mods: Flipping the Harness Inside Out" (Oct 21).</strong> The case that the agent harness is becoming an "Attention Interface": not the layer between agent and machine, but the layer between agent and human attention — deciding when to interrupt you, what to show, and which decisions need you. Claude Mods are Anthropic's early, user-programmable version of it. (<a href="https://www.latent.space/p/claude-mods">post</a>)</li>
+<li><strong>📖 a16z AI Policy Brief — "Turning America's AI Progress Into a Manufacturing Advantage" (Oct 21).</strong> Diode cofounder Davide Asnaghi on using AI to bring hardware to market faster, empower workers, and strengthen US manufacturing competitiveness. (<a href="https://a16zpolicy.substack.com/p/turning-americas-ai-progress-into">post</a>)</li>
+</ul>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-10-21.html">2026-10-21</a></li>
+<li><a href="2026-10-20.html">2026-10-20</a></li>
+<li><a href="2026-10-19.html">2026-10-19</a></li>
+<li><a href="2026-10-18.html">2026-10-18</a></li>
+<li><a href="2026-10-17.html">2026-10-17</a></li>
+<li><a href="2026-10-16.html">2026-10-16</a></li>
+<li><a href="2026-10-15.html">2026-10-15</a></li>
+<li><a href="2026-10-14.html">2026-10-14</a></li>
+<li><a href="2026-10-13.html">2026-10-13</a></li>
+<li><a href="2026-10-12.html">2026-10-12</a></li>
+<li><a href="2026-10-11.html">2026-10-11</a></li>
+<li><a href="2026-10-10.html">2026-10-10</a></li>
+<li><a href="2026-10-09.html">2026-10-09</a></li>
+<li><a href="2026-10-08.html">2026-10-08</a></li>
+<li><a href="2026-10-07.html">2026-10-07</a></li></ul></details>
+<a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+</main>
+</body>
+</html>
