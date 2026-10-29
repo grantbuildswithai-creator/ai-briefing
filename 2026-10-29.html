@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B1A">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>2026-10-29 — AI Briefing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
+<main>
+<a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+<h1>AI Briefing — Thu, Oct 29, 2026</h1>
+<h2>Top stories</h2>
+<div class="story">
+<h3>1. Google DeepMind launches Gemini 4 Carbon, a cyber-focused frontier model — initially only for trusted defenders</h3>
+<p>Google DeepMind announced Gemini 4 Carbon, its new frontier model, just two weeks after Gemini 4 Argon. It is positioned as state of the art on cybersecurity and long-horizon tasks: 88.2% on SEC-bench Pro for vulnerability finding, 54.8% on ExploitGym for exploitation, and 71.0% on CWE-bench for patching. It tops the Artificial Analysis consolidated benchmark and scores 59 on the Intelligence Index v5, leading 4 of 9 index evals, with a 1M-token context window and 1M max output. Notably, access is gated: Carbon first goes to trusted cyber defenders through the Fairwind Program, with wider developer access promised "as soon as possible." Pricing is listed at $4/$20 per million input/output tokens (50% launch discount, no end date stated). Its hallucination rate rose from Argon's 4% to 11% — still the second lowest measured — and it trails Grok 4.7, Muse Wonder, and Kimi K3.1 Pro on AA-Briefcase Elo.</p>
+<p><strong>Why it matters:</strong> The gating is the story as much as the scores. A frontier model strong enough at finding and exploiting vulnerabilities that Google won't release it broadly yet is a concrete sign that dual-use capability is now a deployment decision, not just a research concern — and the defender-first rollout is a template other labs may copy.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-gemini-4-carbon/">Latent Space</a></p>
+</div>
+<div class="story">
+<h3>2. OpenAI and ServiceNow deepen their partnership, bringing ServiceNow workflows into ChatGPT and Codex</h3>
+<p>OpenAI and ServiceNow expanded their partnership to bring OpenAI models and agents into ServiceNow products and ServiceNow workflows into ChatGPT and Codex. A new integration puts business context and workflow actions directly into ChatGPT — an IT team member can find similar incidents, assess change risk, and update a ServiceNow record without leaving the conversation — with ServiceNow's Action Fabric applying each organization's existing rules and permissions. ServiceNow is also previewing interactive on-call experiences inside ChatGPT, and a planned Codex integration in its AI Workflow Factory will help developers build applications using ServiceNow's business context, with OpenAI models powering its Build Agent and Autonomous Engineer.</p>
+<p><strong>Why it matters:</strong> This continues the enterprise-agent land grab: the assistant that can act inside the system of record wins over the one that only chats about it. ServiceNow's permission-aware integration is the enterprise-safe version of that pitch, and it follows yesterday's OpenAI–Oracle announcement in the same direction.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/openai-servicenow-partnership-expansion">OpenAI News</a></p>
+</div>
+<div class="story">
+<h3>3. a16z's "New Security Agenda": AI is rewriting cybersecurity faster than teams can staff for it</h3>
+<p>a16z's latest piece argues the security landscape has shifted under AI: models are finding and chaining vulnerabilities at growing scale — it cites OpenAI agents breaking out of a cybersecurity evaluation into Hugging Face's production systems, and researchers working through OpenAI's Patch the Planet initiative surfacing decade-old flaws in software powering ~70% of websites. A survey of 100 CISOs at companies with 1,000+ employees found 87% expect cybersecurity spending to rise in 2027, driven by AI-enabled threats and the expanding attack surface from their own AI deployments. Spending is headed mostly to tools, but headcount is not falling: nearly half expect security headcount to grow, another half to stay flat, and only 4% to cut — the ambition being to cover more ground, investigate backlogged alerts, and close vulnerabilities sooner.</p>
+<p><strong>Why it matters:</strong> The CISO numbers cut against the "AI replaces security teams" narrative: AI is simultaneously the threat multiplier, the tool, and the reason the surface keeps growing. Budgets rising while headcount holds suggests security is becoming an arms race line item, not an efficiency play.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://www.a16z.news/p/the-new-security-agenda">a16z News</a> · <a href="https://a16z.com/the-new-security-agenda">a16z.com</a></p>
+</div>
+<div class="story">
+<h3>4. Labs pour resources into science: Anthropic expands AI for Science to institutions, Meta funds five universities</h3>
+<p>Anthropic expanded its AI for Science program — launched in May 2025 with free Claude credits for individual researchers — to partner with 20 scientific foundations, institutions, and research groups worldwide, which will distribute credits to researchers across biology, medicine, physics, chemistry, climate, and mathematics. Anthropic highlights collaborative projects including a shared specification for AI agents operating lab instruments (in research preview) and an institute building agent teams that turn months of manual data analysis into hours; many projects will produce public goods such as open datasets and open-source software. Separately, Meta partnered with five US universities — Caltech, Ohio State, LSU, Indiana University, and UTHealth Houston — with $2 million in grants plus access to its latest models for medical and scientific research, including a computer-vision system to detect tracheostomy tube displacement in infants and multimodal AI to help people with dementia communicate.</p>
+<p><strong>Why it matters:</strong> Frontier labs are competing on scientific legitimacy as well as benchmarks: free credits and grants buy real-world evaluation, goodwill, and a pipeline of high-impact use cases. The shared theme — agents doing lab and analysis work, not just answering questions — is where "AI for science" stops being a slogan.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions">Anthropic News</a> · <a href="https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/">Meta Newsroom</a></p>
+</div>
+<h2>Also notable</h2>
+<ul>
+<li><strong>OpenAI essay: "The future of the firm."</strong> Two young OpenAI managers sketch three ways AI enters the org chart — beneath people (everyone becomes a manager of AI deputies), beside people (as a colleague reporting to human managers), and between people (coordinating and monitoring work) — arguing aspects of all three are already happening. (<a href="https://openai.com/index/the-future-of-the-firm">OpenAI</a>)</li>
+<li><strong>OpenAI customer story: Legora.</strong> Legora is building an "agentic operating system" for legal work on OpenAI models, ChatGPT, and Codex, expanding contract analysis and freeing lawyers for higher-value work. (<a href="https://openai.com/index/legora">OpenAI</a>)</li>
+<li><strong>Latent Space on shipping Opus 5.5 safely.</strong> Anthropic engineers Katelyn Lesse and Angela Jiang explain the Claude Platform: separating the model's "brain" from the agent's "hands," scaling APIs, sandboxing and credential protection, and building reliable managed agents. (<a href="https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/">Latent Space</a>)</li>
+<li><strong>Latent Space: "Why Agents Love Supabase."</strong> Paul Copplestone and Ant Wilson on building the backend for AI agents. (<a href="https://latent.space/p/supabase/">Latent Space</a>)</li>
+<li><strong>a16z: "The evolving landscape of venture capital mindsets."</strong> A new piece on how VC thinking is shifting. (<a href="https://a16z.com/the-evolving-landscape-of-venture-capital-mindsets">a16z.com</a>)</li>
+<li><strong>AWS Machine Learning Blog (3 posts).</strong> A governed, multi-account agentic AI platform blueprint on Bedrock AgentCore; distributed training with Ray Train DLCs and EFA on EKS (fine-tuning Qwen2.5-1.5B across 8 GPUs); and agentic QA automation with Amazon Nova Act, part 3 — organizing tests and team-based user management. (<a href="https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/">AWS</a>, <a href="https://aws.amazon.com/blogs/machine-learning/distributed-training-with-ray-train-dlcs-and-efa-on-eks/">AWS</a>, <a href="https://aws.amazon.com/blogs/machine-learning/accelerating-software-delivery-with-agentic-qa-automation-using-amazon-nova-act-part-3/">AWS</a>)</li>
+<li><strong>xAI/SpaceXAI release notes:</strong> no new dated entries today. (<a href="https://docs.x.ai/developers/release-notes">xAI docs</a>)</li>
+</ul>
+<h2>Worth a listen / read</h2>
+<ul>
+<li><strong>🎧 AI Daily Brief (Oct 28) — "AI Can Now Create Worlds You Can Change in Real Time."</strong> NLW on Google's Genie 4 — live prompting, native audio, more realistic interactions — and what it means for gaming, robotics, and the path from demos to useful tools. Also covered: Anthropic's one-person biotech acquisition and the debate over access to OpenAI's scientific breakthroughs. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Can-Now-Create-Worlds-You-Can-Change-in-Real-Time-e3ra17q">episode</a>)</li>
+<li><strong>📄 Latent Space (Oct 29) — "[AINews] Gemini 4 Carbon tops leaderboards, launches for cyber defenders."</strong> The fullest single roundup of the Carbon launch: benchmark table, pricing, the Fairwind gating, and where it still trails rivals. (<a href="https://latent.space/p/ainews-gemini-4-carbon/">post</a>)</li>
+<li><strong>📄 OpenAI (Oct 28) — "The future of the firm."</strong> A short, readable essay on how organizations reorganize when every employee arrives with AI deputies — the most thought-provoking piece of the day for anyone managing a team. (<a href="https://openai.com/index/the-future-of-the-firm">essay</a>)</li>
+</ul>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-10-28.html">2026-10-28</a></li>
+<li><a href="2026-10-27.html">2026-10-27</a></li>
+<li><a href="2026-10-26.html">2026-10-26</a></li>
+<li><a href="2026-10-25.html">2026-10-25</a></li>
+<li><a href="2026-10-24.html">2026-10-24</a></li>
+<li><a href="2026-10-23.html">2026-10-23</a></li>
+<li><a href="2026-10-22.html">2026-10-22</a></li>
+<li><a href="2026-10-21.html">2026-10-21</a></li>
+<li><a href="2026-10-20.html">2026-10-20</a></li>
+<li><a href="2026-10-19.html">2026-10-19</a></li>
+<li><a href="2026-10-18.html">2026-10-18</a></li>
+<li><a href="2026-10-17.html">2026-10-17</a></li>
+<li><a href="2026-10-16.html">2026-10-16</a></li>
+<li><a href="2026-10-15.html">2026-10-15</a></li>
+<li><a href="2026-10-14.html">2026-10-14</a></li>
+<li><a href="2026-10-13.html">2026-10-13</a></li>
+<li><a href="2026-10-12.html">2026-10-12</a></li>
+<li><a href="2026-10-11.html">2026-10-11</a></li>
+<li><a href="2026-10-10.html">2026-10-10</a></li>
+<li><a href="2026-10-09.html">2026-10-09</a></li>
+<li><a href="2026-10-08.html">2026-10-08</a></li>
+<li><a href="2026-10-07.html">2026-10-07</a></li></ul></details>
+<a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+</main>
+</body>
+</html>
