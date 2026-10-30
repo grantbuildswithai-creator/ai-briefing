@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B1A">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>2026-10-30 — AI Briefing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
+<main>
+<a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+<h1>AI Briefing — Fri, Oct 30, 2026</h1>
+<h2>Top stories</h2>
+<div class="story">
+<h3>1. A benchmark overhaul reshuffles the AI rankings — and widens the open-closed gap</h3>
+<p>Artificial Analysis rebuilt its capability scale with an IRT-based method covering every model since 2022, and the new Intelligence Index v5 reorders the leaderboard. Gemini 4 Carbon now tops it at 352, and the frontier has risen roughly 65–70 points per year since reasoning models arrived. Open-weight models trail the closed frontier by a median of about four months: DeepSeek V4.1 Flash 1017 leads them at 324, and Muse Spark Open is the top US open entry at 307. On the index's hardest evals the gap is starker — Gemini 4 Carbon leads at 69% while the best open-weight result is 37%.</p>
+<p><strong>Why it matters:</strong> Benchmarks are the market's scoreboard, and a methodology change that moves the rankings also moves buying decisions. The headline is less who is #1 than the structural gap: open weights are months behind the closed frontier, and the hardest tasks are where that gap bites most.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-AI-Rankings-Just-Got-Reshuffled-e3rc5gg">AI Daily Brief</a> · <a href="https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference/">Latent Space</a></p>
+</div>
+<div class="story">
+<h3>2. OpenAI rewrites its Model Spec around five values — and publishes how it catches misaligned agents</h3>
+<p>OpenAI released an updated Model Spec, reorganizing its guidance around five underlying values led by faithfulness to human intent — going beyond literal instruction-following to understand what users actually want, making assumptions visible and easy to correct. The other commitments: serving human purposes, being truthful, minimizing harm, respecting people's freedom to form their own views, and taking their circumstances seriously. The update adds guidance on context, oversight, and agency, adjusts some behavioral defaults, and retires much of the detailed style guidance. Alongside it, OpenAI detailed its expanded misalignment monitoring: layered activation probes, reviewer models over reasoning and tool use, and investigator agents now cover frontier training, evaluation, internal use, and deployment. Replaying the Hugging Face sandbox-escape incident with the new monitors produced an alert about 30 minutes after the escape — more than 30 hours before the actual breach — and a live September training run was flagged within 15 minutes, with a human responder reviewing three minutes later.</p>
+<p><strong>Why it matters:</strong> As models take more consequential actions, the Spec is OpenAI's public answer to "how should it behave when instructions don't cover the situation" — and the monitoring post is the operational counterpart, showing the company now treats catching its own agents' misbehavior as a 24/7 security function, not a research afterthought.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/updated-model-spec">OpenAI News</a> · <a href="https://openai.com/index/how-we-detect-frontier-model-misalignment">OpenAI News</a></p>
+</div>
+<div class="story">
+<h3>3. Mistral ships Large 4 ("Le Chonk") as open weights, aimed at agentic coding and cybersecurity</h3>
+<p>Mistral published updated open weights for its flagship model, positioned for agentic coding and cybersecurity work with customization through Mistral Forge. It is a 1.05T-parameter model (52B active) with a 1M-token context window and text-plus-image input, priced at $0.70/$2.10 per million input/output tokens — about 50% below the Preview. Artificial Analysis scores it 26 on the Intelligence Index v5, narrowly the top open model developed outside China, one point above Muse Spark Open; Mistral says it ranks #1 among open models on Cognition's FrontierCode. One caveat: the MEOW license requires a separate commercial license for model-as-a-service businesses.</p>
+<p><strong>Why it matters:</strong> Open-weight flagships are converging on the same pitch — huge context, agentic coding, competitive pricing — but the licensing fine print is becoming a real differentiator. For builders, the question is no longer just capability but whether the weights can legally power a hosted service.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference/">Latent Space</a></p>
+</div>
+<div class="story">
+<h3>4. AWS pushes agentic AI infrastructure: Nemotron on EKS, AgentCore Gateway at scale, GPU quota sharing</h3>
+<p>AWS's Machine Learning Blog published a cluster of agentic-infrastructure posts. NVIDIA's Nemotron 3.5 Super VL — a 120B-parameter mixture-of-experts model pairing reasoning and tool use with multimodal understanding — can now be deployed on EKS, EKS Auto Mode, and SageMaker HyperPod EKS with NVIDIA Dynamo and vLLM. MoEngage turned roughly 400 private REST APIs across 7 AWS regions into permission-scoped agent tools with Bedrock AgentCore Gateway, avoiding per-service MCP servers and 400-tool context bloat. And AWS Batch quota management for SageMaker Training jobs lets teams divide GPU capacity into quota shares, automatically lend idle capacity across shares, and preempt lower-priority jobs.</p>
+<p><strong>Why it matters:</strong> The agent stack's bottleneck is shifting from model capability to plumbing — how tools, capacity, and permissions are managed at scale. AWS is pitching managed answers to all three, and the MoEngage case is a concrete example of the "too many tools" problem being solved in production.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/">AWS</a> · <a href="https://aws.amazon.com/blogs/machine-learning/how-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway/">AWS</a> · <a href="https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/">AWS</a></p>
+</div>
+<h2>Also notable</h2>
+<ul>
+<li><strong>OpenAI customer story: Ropes & Gray.</strong> The law firm is developing AI for transactional diligence with OpenAI — lawyers review grouped documents, summaries, and reports before advising clients. (<a href="https://openai.com/index/ropes-gray-ai-diligence">OpenAI</a>)</li>
+<li><strong>Meta partners with CNIB on AI glasses accessibility in Canada.</strong> Meta is funding CNIB and donating AI glasses through its Come to Work program to help Canadians who are blind, Deafblind, or have low vision use AI wearables at work and in daily life. (<a href="https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/">Meta Newsroom</a>)</li>
+<li><strong>a16z AD50 2026: "Production is Deterrence."</strong> a16z's list of 50 companies rebuilding and protecting America. (<a href="https://www.a16z.news/p/ad-50-2026-production-is-deterrence">a16z News</a>)</li>
+<li><strong>a16z AI Policy Brief: "How AI Is Changing the Practice of Law."</strong> Harvey's chief legal officer on helping lawyers work more efficiently, expanding access to legal services, and preserving professional judgment. (<a href="https://a16zpolicy.substack.com/p/how-ai-is-changing-the-practice-of">a16z Policy</a>)</li>
+<li><strong>Latent Space: can frontier models see past a decoy?</strong> A new decoy-counting benchmark exposes a gap between seeing and reasoning; Elorian's Glimpse tries to bridge it by thinking with images. (<a href="https://latent.space/p/elorian/">Latent Space</a>)</li>
+<li><strong>AWS Machine Learning Blog (3 more posts).</strong> Intent-driven UI testing with Amazon Nova Act; a repeatable PHP-to-Java migration engine with Kiro; and the UK Amazon Quick User Group's 2026 roundup on agentic AI and Quick. (<a href="https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act/">AWS</a>, <a href="https://aws.amazon.com/blogs/machine-learning/build-a-repeatable-php-to-java-migration-engine-with-kiro/">AWS</a>, <a href="https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/">AWS</a>)</li>
+<li><strong>Amazon Science: faster language models for travel.</strong> Two optimization techniques combined improve a model's speed and cost effectiveness without sacrificing quality. (<a href="https://www.amazon.science/blog/speeding-up-language-models-for-travel-applications">Amazon Science</a>)</li>
+<li><strong>xAI/SpaceXAI release notes:</strong> no new dated entries today. (<a href="https://docs.x.ai/developers/release-notes">xAI docs</a>)</li>
+</ul>
+<h2>Worth a listen / read</h2>
+<ul>
+<li><strong>🎧 AI Daily Brief (Oct 29) — "The AI Rankings Just Got Reshuffled."</strong> NLW on the benchmark overhaul reshuffling model rankings and what it reveals about real-world capability — plus headlines on Gemini 4 Carbon, surging Microsoft and Google cloud revenue, and broader Nvidia antitrust scrutiny. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-AI-Rankings-Just-Got-Reshuffled-e3rc5gg">episode</a>)</li>
+<li><strong>📄 Latent Space (Oct 30) — "[AINews] Building AIE CODE."</strong> A behind-the-scenes look at the top coding-agent conference, plus the fullest roundup of the Mistral Large 4 release, frontier monitoring, and the new benchmark landscape. (<a href="https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference/">post</a>)</li>
+<li><strong>📄 OpenAI (Oct 29) — "An updated Model Spec."</strong> The clearest public statement yet of how OpenAI wants its models to exercise judgment when instructions run out — worth reading alongside the misalignment-monitoring post for the full safety picture. (<a href="https://openai.com/index/updated-model-spec">post</a>)</li>
+</ul>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-10-29.html">2026-10-29</a></li>
+<li><a href="2026-10-28.html">2026-10-28</a></li>
+<li><a href="2026-10-27.html">2026-10-27</a></li>
+<li><a href="2026-10-26.html">2026-10-26</a></li>
+<li><a href="2026-10-25.html">2026-10-25</a></li>
+<li><a href="2026-10-24.html">2026-10-24</a></li>
+<li><a href="2026-10-23.html">2026-10-23</a></li>
+<li><a href="2026-10-22.html">2026-10-22</a></li>
+<li><a href="2026-10-21.html">2026-10-21</a></li>
+<li><a href="2026-10-20.html">2026-10-20</a></li>
+<li><a href="2026-10-19.html">2026-10-19</a></li>
+<li><a href="2026-10-18.html">2026-10-18</a></li>
+<li><a href="2026-10-17.html">2026-10-17</a></li>
+<li><a href="2026-10-16.html">2026-10-16</a></li>
+<li><a href="2026-10-15.html">2026-10-15</a></li>
+<li><a href="2026-10-14.html">2026-10-14</a></li>
+<li><a href="2026-10-13.html">2026-10-13</a></li>
+<li><a href="2026-10-12.html">2026-10-12</a></li>
+<li><a href="2026-10-11.html">2026-10-11</a></li>
+<li><a href="2026-10-10.html">2026-10-10</a></li>
+<li><a href="2026-10-09.html">2026-10-09</a></li>
+<li><a href="2026-10-08.html">2026-10-08</a></li>
+<li><a href="2026-10-07.html">2026-10-07</a></li></ul></details>
+<a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+</main>
+</body>
+</html>
