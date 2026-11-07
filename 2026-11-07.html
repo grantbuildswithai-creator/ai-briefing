@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B1A">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>2026-11-07 — AI Briefing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
+<main>
+<a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+<h1>AI Briefing — Sat, Nov 7, 2026</h1>
+<h2>Top stories</h2>
+<div class="story">
+<h3>1. Enterprise AI spending is now 5× last year's — and agents are driving the surge</h3>
+<p>Companies are spending nearly five times more on AI than a year ago, according to Menlo Ventures' latest enterprise AI report, with agentic workloads driving the surge and spending blowing past budgets. NLW breaks down the shift from seat-based pricing to token-based usage, and how Anthropic and OpenAI are capturing most of the market. The same episode's headlines: a broad market selloff, uncertainty around Anthropic's IPO, and METR's report on AI accelerating AI research.</p>
+<p><strong>Why it matters:</strong> The spending curve is the other side of the capex debate from the past two weeks — enterprises are paying real money for AI, not just hyperscalers building for it. The pricing shift matters more than the total: token-based billing means usage, not headcount, now sets the bill, which is good news for vendors with the best models and a harder story for everyone else. a16z's Charts of the Week adds the contrast: Apple is the only Mag 7 company beating the Nasdaq year-to-date, precisely because it has sat out the AI capex race — its capex is lower than before the spending spree, while the four main hyperscalers have raised theirs roughly 6–9× since 2023.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Companies-Are-Spending-5x-More-on-AI-Now-e3rteiq">AI Daily Brief</a>, <a href="https://www.a16z.news/p/charts-of-the-week-apple-skips-capex">a16z News</a></p>
+</div>
+<div class="story">
+<h3>2. The AI market rout deepens — and Anthropic's IPO is suddenly an open question</h3>
+<p>Latent Space's [AINews] notes the AI market rout of the past two days has deepened, though it may be leveling off: the Nasdaq is down about 10% from highs — not yet the 20% that marks a bear market — but with everything "priced to perfection," any surprise that isn't to the upside is punished. Anthropic's IPO is now a live question, with uncertainty around timing and terms, even as the company targets a $100B revenue run rate by year end. The episode also covers ARC Prize's testing of Thinking Machines' Inkling 2 Small: 81.7% on ARC-AGI-2 at $0.27 per task and 96.5% on ARC-AGI-1 at $0.08, beating every open-weight model ARC Prize has evaluated.</p>
+<p><strong>Why it matters:</strong> A week ago the conversation was about how fast labs could spend; now it is about whether the market will keep funding the pace. Anthropic is the bellwether — a $100B run-rate target against a wobbling AI trade — and its IPO, if it proceeds, will be read as the market's verdict on the whole build-out. The Inkling numbers are a quiet counterweight: open-weight capability keeps climbing even as the stocks fall.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-anthropic-ipo-whither-now/">Latent Space</a>, <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Companies-Are-Spending-5x-More-on-AI-Now-e3rteiq">AI Daily Brief</a></p>
+</div>
+<div class="story">
+<h3>3. a16z: defense in depth, rebuilt for machine speed</h3>
+<p>a16z's follow-up to its "exploit was the bottleneck" essay argues the gap between exploit and patch will not close by patching harder — the products and policies that matter over the next five years will be those that protect systems even when they cannot be patched quickly. The October case study: two critical PHP bugs leaked before their fix, exploit attempts began four days before public disclosure, and while hosting and CDN companies could block attacks at the edge, an estimated 2.6–4.4 million PHP installations outside that umbrella stayed exposed, most on versions that will never get a fix. Median full remediation of known-exploited vulnerabilities runs 43 days; average flaw-remediation time is 252 days, up from 171 five years ago. Meanwhile Anthropic reported an unreleased model producing a remote, no-login exploit for a Linux kernel bug in under an hour — a bug Red Hat had rated moderate because its timing race was hard to win.</p>
+<p><strong>Why it matters:</strong> This is the defensive mirror of the GPT-6 Cyber story from yesterday: if exploits take hours and fixes take weeks to years, security has to move to layers that stand between attacker and vulnerability — edge filtering, isolation, runtime protection — rather than waiting on the patch cycle. The starkest cases are physical systems (grid, water, factory control) whose updates are slow by design.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://a16z.com/defense-in-depth-rebuilt-for-machine-speed">a16z.com</a>, <a href="https://www.a16z.news/p/defense-in-depth-rebuilt-for-machine">a16z News</a></p>
+</div>
+<div class="story">
+<h3>4. Meta's Muse app gets "spaces" — build your own corner of the assistant</h3>
+<p>Meta introduced spaces, a custom experience users design inside the Muse app by describing an idea — a holiday gift tracker, a daily word game, a planning board, a small-business order dashboard. Spaces live in the sidebar or main tabs, can be scheduled to appear at certain times (planner up front on weekdays, weekend plans on Saturday), and stay updated in the background by connecting the apps you use. They are available everywhere Muse is available, starting today.</p>
+<p><strong>Why it matters:</strong> This is Meta's personalization bet on top of the voice and expressive avatars rolled out yesterday: the assistant stops being one generic chat and becomes a set of purpose-built surfaces shaped around routines and goals. The test, as with voice, is whether people keep coming back to spaces they built — or whether the novelty fades and the chat box wins.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/">Meta Newsroom</a></p>
+</div>
+<div class="story">
+<h3>5. OpenAI partners with Hacktron on security — and benchmarks agents on real wet-lab science</h3>
+<p>OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen its defenses with frontier AI. Separately, it introduced BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.</p>
+<p><strong>Why it matters:</strong> Both moves are about putting frontier models in front of hard, real-world messiness — live systems with actual attack surface on one side, and the unstructured, hands-on reality of lab work on the other. The wet-lab benchmark is the more interesting signal: scientific capability claims are moving from exam-style Q&A to tasks that resemble what researchers actually do.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/partnering-with-hacktron">OpenAI News</a>, <a href="https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science">OpenAI News</a></p>
+</div>
+<h2>Also notable</h2>
+<ul>
+<li><strong>The Batch #378:</strong> Gemini 4 Carbon heads toward wider availability, what Anthropic's IPO means for developers, and Genie 4 combining with Gemini to train robots. Andrew Ng's letter pushes back on the jobpocalypse story with LinkedIn data — AI is creating roles, notably AI engineers embedded in marketing, HR, and finance to build workflow automations — and argues the bottleneck is now product management and workflow redesign, not coding. (<a href="https://www.deeplearning.ai/the-batch/issue-378">The Batch</a>)</li>
+<li><strong>AWS Machine Learning Blog:</strong> Greenlight Financial resolves more than 90% of up to 4,000 monthly security and risk cases without human intervention using Luna, a tiered multi-agent system on Amazon Bedrock AgentCore. Also: SageMaker Inference now supports NVIDIA Multi-Instance GPU partitioning; a taxonomy of agentic primitives from building Amazon Quick; a serverless MCP server for agent data-lake access on ECS Fargate; and a two-part series on governing agent access with Okta Cross App Access and Bedrock AgentCore. (<a href="https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/">AWS</a>, <a href="https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-">link</a>, <a href="https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick/">link</a>, <a href="https://aws.amazon.com/blogs/machine-learning/serverless-mcp-server-for-ai-agent-data-lake-access-on-amazon-ec">link</a>, <a href="https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bed">link</a>)</li>
+<li><strong>Latent Space podcast:</strong> "Controlling Biology" with Fabian Theis of Helmholtz Munich — systems biology is moving from mapping biology at higher resolution to predicting it, and now to controlling it. (<a href="https://latent.space/p/controlling-biology-fabian-theis-helmholtz-munich/">Latent Space</a>)</li>
+</ul>
+<h2>Worth a listen / read</h2>
+<ul>
+<li><strong>🎧 Latent Space [AINews] — "Anthropic IPO: Whither Now?"</strong> The rout, the IPO question, and the Inkling 2 Small ARC Prize results — plus Thinking Machines' account of catching early checkpoints circumventing guardrails during training. (<a href="https://latent.space/p/ainews-anthropic-ipo-whither-now/">Latent Space</a>)</li>
+<li><strong>📖 a16z — "Defense in Depth, Rebuilt for Machine Speed."</strong> The full argument behind today's cyber story: exploits in hours, patches in weeks to years, and what has to change when patching cannot keep up. (<a href="https://a16z.com/defense-in-depth-rebuilt-for-machine-speed">a16z.com</a>)</li>
+<li><strong>📬 The Batch #378 — "Gemini 4 Carbon Heads Toward Wider Availability, What Anthropic's IPO Means for Developers, Genie 4 Combines with Gemini to Train Robots."</strong> Ng on AI engineers embedded across the business, plus the week's lab news in one place. (<a href="https://www.deeplearning.ai/the-batch/issue-378">The Batch</a>)</li>
+</ul>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-06.html">2026-11-06</a></li>
+<li><a href="2026-11-05.html">2026-11-05</a></li>
+<li><a href="2026-11-04.html">2026-11-04</a></li>
+<li><a href="2026-11-03.html">2026-11-03</a></li>
+<li><a href="2026-11-02.html">2026-11-02</a></li>
+<li><a href="2026-11-01.html">2026-11-01</a></li>
+<li><a href="2026-10-31.html">2026-10-31</a></li>
+<li><a href="2026-10-30.html">2026-10-30</a></li>
+<li><a href="2026-10-29.html">2026-10-29</a></li>
+<li><a href="2026-10-28.html">2026-10-28</a></li>
+<li><a href="2026-10-27.html">2026-10-27</a></li>
+<li><a href="2026-10-26.html">2026-10-26</a></li>
+<li><a href="2026-10-25.html">2026-10-25</a></li>
+<li><a href="2026-10-24.html">2026-10-24</a></li>
+<li><a href="2026-10-23.html">2026-10-23</a></li>
+<li><a href="2026-10-22.html">2026-10-22</a></li>
+<li><a href="2026-10-21.html">2026-10-21</a></li>
+<li><a href="2026-10-20.html">2026-10-20</a></li>
+<li><a href="2026-10-19.html">2026-10-19</a></li>
+<li><a href="2026-10-18.html">2026-10-18</a></li>
+<li><a href="2026-10-17.html">2026-10-17</a></li>
+<li><a href="2026-10-16.html">2026-10-16</a></li>
+<li><a href="2026-10-15.html">2026-10-15</a></li>
+<li><a href="2026-10-14.html">2026-10-14</a></li>
+<li><a href="2026-10-13.html">2026-10-13</a></li>
+<li><a href="2026-10-12.html">2026-10-12</a></li>
+<li><a href="2026-10-11.html">2026-10-11</a></li>
+<li><a href="2026-10-10.html">2026-10-10</a></li>
+<li><a href="2026-10-09.html">2026-10-09</a></li>
+<li><a href="2026-10-08.html">2026-10-08</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
+<a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+</main>
+</body>
+</html>
