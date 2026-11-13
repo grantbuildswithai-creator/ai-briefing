@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B1A">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>2026-11-13 — AI Briefing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
+<main>
+<a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+<h1>AI Briefing — Fri, Nov 13, 2026</h1>
+<h2>Top stories</h2>
+<div class="story">
+<h3>1. Jensen Huang resigns after 33 years leading Nvidia; CFO Colette Kress takes over as interim CEO</h3>
+<p>Jensen Huang has stepped down as CEO, president, and board member of Nvidia after 33 years at the helm, with CFO Colette Kress (in the role since 2013) serving as interim CEO while keeping her finance job. Latent Space reports the departure was presumably forced by the board, following reports that the board was preparing to replace him, and notes discussion of whether Chinese models can be shown to have been trained on Blackwell GPUs they should not have had access to. NLW's AI Daily Brief frames it as a power vacuum stretching across the whole AI industry — from China policy and open source to the financial commitments underpinning the AI buildout — and examines the allegations behind the departure and who stands to benefit. All eyes now turn to what Latent Space calls "presumably the best attended earnings call in the history of $NVDA," with Nvidia's Q3 print due Tuesday, Nov 17.</p>
+<p><strong>Why it matters:</strong> Huang built Nvidia from a graphics-chip company into the company at the center of the AI economy, and his departure lands days before the most-watched earnings call of the year. The succession question — who leads Nvidia, and whether the China/espionage questions around the company change its trajectory — now sits on top of every other AI question, from open-source leadership to the infrastructure buildout.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/">Latent Space</a> · <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Jensen-Huang-Is-Out--Everything-in-AI-Is-Now-Up">AI Daily Brief</a></p>
+</div>
+<div class="story">
+<h3>2. Google launches Gemini 4 Hydrogen, a speed-first Gemini 4 tier now powering Search</h3>
+<p>Google has released Gemini 4 Hydrogen, a speed-first model positioned alongside Carbon and Argon, and rolled it out globally in Google Search — the biggest model upgrade to Search yet, per Google. Hydrogen completes tasks 2.5x faster than Gemini 3.8 Flash, offers four thinking levels (low, medium, high, xhigh) and a 1M-token context window, and is priced at $1.50/$7.50 per million input/output tokens with a 95% discount on cached input. On the Artificial Analysis Intelligence Index it edges Argon, 51 vs 50 at default thinking and 54 at xhigh — one point behind Claude Sonnet 5.5 (max) and GPT-6.1 Sol (max) — at about 32% of Sonnet's cost but roughly 2.5x Sol's. It scores 57% on Terminal-Bench 4.0, and in Antigravity, Carbon plans while Hydrogen writes and tests code, reaching near-Carbon success with 24% less quota and 19% faster completion. It is available on all Gemini API tiers including a free tier in AI Studio, and is the default model in Search AI Mode.</p>
+<p><strong>Why it matters:</strong> Google now has a full Gemini 4 ladder — Argon for frontier reasoning, Carbon for agentic coding, Hydrogen for speed — and it is putting the fast tier in front of every Search user on day one. The independent benchmarks show a mixed but real profile: notably lower hallucination rates than its rivals (8% vs 43% for Sonnet on AA-Omniscience), at a price that undercuts the frontier on cost per task. Speed-tier models are becoming the default interface layer, with the heavy models reserved for the hard parts.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/">Google AI Blog</a> · <a href="https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/">Latent Space</a></p>
+</div>
+<div class="story">
+<h3>3. a16z proposes a CEO-led public-private plan to defend critical infrastructure in the "super intelligence era"</h3>
+<p>Anne Neuberger — a16z general partner and former Deputy National Security Advisor for Cyber and Emerging Threats — has published a plan for a public-private partnership to defend America's critical infrastructure against AI-accelerated cyberattacks. The argument: AI is shrinking the time between a weakness being found and exploited, while much of the infrastructure that matters (power, banking and payments, water, communications, hospitals) runs on equipment that is decades old and often cannot be patched without risking outages. The plan concentrates on the few hundred operators and shared vendors whose failure would cascade nationally, and calls for a CEO council accountable to the White House's Super Intelligence Force, AI-enabled sector ISACs delivering defenses to each sector's regulator, monthly scorecards, liability protection for information sharing, and a possible safe harbor for companies meeting outcomes-based targets. A second phase would build digital twins of critical shared systems for regular testing.</p>
+<p><strong>Why it matters:</strong> This is the policy counterpart to the "Black October" cyber wave covered in recent briefings: the defender side is now organizing around the same premise — AI collapses the patch window, so defense has to move at machine speed too. Neuberger's plan is notable for who it puts in charge: CEOs, not agencies, with measurable outcomes instead of compliance checklists.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://www.a16z.news/p/super-intelligence-era-critical-infrastructure">a16z News</a> · <a href="https://a16z.com/super-intelligence-era-critical-infrastructure-cyber-defense-plan">a16z</a></p>
+</div>
+<div class="story">
+<h3>4. ArtCraft used AI to clone Photoshop — and now wants to "rebuild everything"</h3>
+<p>At the AI Engineer Code Summit, ArtCraft founder and CEO Brandon Thomas presented a manifesto for AI-built open-source software: his team has released 17 open-source rewrites of popular tools, starting with PhotoCraft, a Photoshop alternative built from scratch in Rust, plus PdfCraft (an Acrobat clone), a Figma clone, and WordCraft, a Microsoft-like word processor. The team gave an AI model a detailed prompt outlining Photoshop's tools, data structures, and file importers, and within 24 hours had "a pretty good approximation" of the product. PhotoCraft claims about 76% feature parity and 46% professional readiness, with a goal of near-100%. Thomas's pitch is that the early web was open and experimental until Web 2.0 consolidated distribution behind gatekeepers — and that AI now makes it cheap enough to rebuild the applications users lost.</p>
+<p><strong>Why it matters:</strong> Cloning a flagship desktop app in a day is a striking demo of what agentic coding can do to software moats — and ArtCraft is betting the same approach scales to the whole application layer, not just one app. Whether "rebuild everything" is a real strategy or a demo that hits the hard parts of a mature product (plugins, color management, professional workflows) is the open question, but the cost of challenging an incumbent has clearly collapsed.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/artcraft/">Latent Space</a></p>
+</div>
+<h2>Also notable</h2>
+<ul>
+<li>OpenAI customer stories: Amplitude's proactive product agent Wave identifies what to build and helps teams ship changes in 1–2 days; Gondola doubled revenue with Codex raising its lead engineer's output by 50%. (<a href="https://openai.com/business/customer-stories/amplitude">OpenAI</a>) · (<a href="https://openai.com/business/customer-stories/gondola">OpenAI</a>)</li>
+<li>a16z on gaming's next origin stories: what AI makes possible for indie developers, toolmakers, and studios. (<a href="https://www.a16z.news/p/gamings-next-origin-stories">a16z News</a>) · (<a href="https://a16z.com/gamings-next-origin-stories">a16z</a>)</li>
+<li>AWS cluster: SGLang-Neuron is publicly available for serving frontier models on Trainium; Natera built an agentic lab-ops system on Bedrock AgentCore (~130x faster first response, 96.2% automated ticket coverage); plus guides on Bedrock inference cost choices, per-identity spend caps, cost-per-task and agent ROI, and a self-service LLM gateway with LiteLLM. (<a href="https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron/">AWS</a>) · (<a href="https://aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore/">AWS</a>) · (<a href="https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/">AWS</a>) · (<a href="https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/">AWS</a>) · (<a href="https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/">AWS</a>) · (<a href="https://aws.amazon.com/blogs/machine-learning/building-a-self-service-llm-gateway-with-amazon-bedrock-and-lite-llm/">AWS</a>)</li>
+<li>No new posts today from The Batch, Anthropic, Meta, Microsoft, One Useful Thing, Amazon Science, a16z YouTube, the AI + a16z podcast, or the a16z AI Policy Brief. xAI release notes: no new entries. (a16z.com also re-listed its General Translation investment and B2A economy pieces, both covered in the Nov 11 and Nov 12 briefings.)</li>
+</ul>
+<h2>Worth a listen / read</h2>
+<ul>
+<li><strong>🎧 AI Daily Brief (Nov 12) — "Jensen Huang Is Out. Everything in AI Is Now Up for Grabs."</strong> NLW on the allegations behind Huang's departure, who stands to benefit, and what happens when the industry loses one of its most influential figures — from China policy and open source to the financial commitments behind the AI buildout. (The episode page returned a 404 to our fetcher; summary from the feed description.) (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Jensen-Huang-Is-Out--Everything-in-AI-Is-Now-Up">episode</a>)</li>
+<li><strong>📖 Latent Space (Nov 13) — "[AINews] Jensen Huang resigns after 33 years leading NVIDIA."</strong> The fullest rundown of the resignation and its context, plus Gemini 4 Hydrogen's independent benchmark profile and the week's open-weight releases. (<a href="https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/">article</a>)</li>
+<li><strong>📖 a16z News (Nov 12) — "Super Intelligence-Era Critical Infrastructure Cyber Defense Plan."</strong> Neuberger's plan in full: why the patch window has collapsed, which few hundred operators matter most, and a CEO-led governance model with monthly scorecards. (<a href="https://www.a16z.news/p/super-intelligence-era-critical-infrastructure">article</a>)</li>
+</ul>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-12.html">2026-11-12</a></li>
+<li><a href="2026-11-11.html">2026-11-11</a></li>
+<li><a href="2026-11-10.html">2026-11-10</a></li>
+<li><a href="2026-11-09.html">2026-11-09</a></li>
+<li><a href="2026-11-08.html">2026-11-08</a></li>
+<li><a href="2026-11-07.html">2026-11-07</a></li>
+<li><a href="2026-11-06.html">2026-11-06</a></li>
+<li><a href="2026-11-05.html">2026-11-05</a></li>
+<li><a href="2026-11-04.html">2026-11-04</a></li>
+<li><a href="2026-11-03.html">2026-11-03</a></li>
+<li><a href="2026-11-02.html">2026-11-02</a></li>
+<li><a href="2026-11-01.html">2026-11-01</a></li>
+<li><a href="2026-10-31.html">2026-10-31</a></li>
+<li><a href="2026-10-30.html">2026-10-30</a></li>
+<li><a href="2026-10-29.html">2026-10-29</a></li>
+<li><a href="2026-10-28.html">2026-10-28</a></li>
+<li><a href="2026-10-27.html">2026-10-27</a></li>
+<li><a href="2026-10-26.html">2026-10-26</a></li>
+<li><a href="2026-10-25.html">2026-10-25</a></li>
+<li><a href="2026-10-24.html">2026-10-24</a></li>
+<li><a href="2026-10-23.html">2026-10-23</a></li>
+<li><a href="2026-10-22.html">2026-10-22</a></li>
+<li><a href="2026-10-21.html">2026-10-21</a></li>
+<li><a href="2026-10-20.html">2026-10-20</a></li>
+<li><a href="2026-10-19.html">2026-10-19</a></li>
+<li><a href="2026-10-18.html">2026-10-18</a></li>
+<li><a href="2026-10-17.html">2026-10-17</a></li>
+<li><a href="2026-10-16.html">2026-10-16</a></li>
+<li><a href="2026-10-15.html">2026-10-15</a></li>
+<li><a href="2026-10-14.html">2026-10-14</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
+<a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+</main>
+</body>
+</html>
