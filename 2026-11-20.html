@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B1A">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>2026-11-20 — AI Briefing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
+<main>
+<a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+<h1>AI Briefing — Fri, Nov 20, 2026</h1>
+<h2>Top stories</h2>
+<div class="story">
+<h3>1. Anthropic closes its IPO — the largest in history, with $119.5B raised in total</h3>
+<p>Anthropic closed its initial public offering of 1.127 billion Class A shares at $83.00, including the underwriters' full exercise of their 147M-share option, for about $93.5B in gross proceeds — roughly $91.6B of it to Anthropic. A concurrent private placement sold 313.25M Class N shares to AMD, Broadcom, Google, Micron, Microsoft, NVIDIA, and TSMC for about $26.0B, bringing total gross proceeds to approximately $119.5B. ANT began trading on Nasdaq on November 19, opened at $111.50, and closed at $97.17 — up 17% from the offer price — for a valuation of about $1.5T at the close (near $2T fully diluted at the open). CEO Dario Amodei used the occasion to restate a safety commitment: Anthropic will pace training and deployment "taking as long as is necessary to have confidence that they are safe and will remain under human control," and "will not bend to either business or political pressure."</p>
+<p><strong>Why it matters:</strong> The raise beats SpaceX's $75B June IPO as the largest ever, and the first-day pop — with roughly a trillion dollars of shares set to free up over the next year as lockups expire — makes ANT the market's live verdict on frontier-lab economics. The more durable signal is the buyer list: the same chipmakers and hyperscalers that supply Anthropic's compute also bought in directly, and Amodei tied the listing to a public pacing commitment rather than a growth sprint.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://www.anthropic.com/news/ipo-close">Anthropic</a>, <a href="https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/">Latent Space</a></p>
+</div>
+<div class="story">
+<h3>2. Google opens Genie 4, its world model, to developers</h3>
+<p>Google opened Genie 4 to developers through the Gemini API: a real-time world model generating 720p video at 24fps with WASD control and 48kHz audio, delivered over WebRTC/WebSocket on the new Live Interactions API. It is the interactive-world-model counterpart to Google's text and image generation stack, aimed at games, simulation, and embodied-agent training rather than static content.</p>
+<p><strong>Why it matters:</strong> World models are moving from demos to developer APIs — controllable, real-time, and billed per use. If Genie 4 works as advertised, it gives developers a cheap way to generate interactive environments on demand, and it puts Google in direct competition with the game-engine and simulation incumbents for the next layer of agent training data.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/">Latent Space</a></p>
+</div>
+<div class="story">
+<h3>3. AWS lets agents buy software on your AWS bill</h3>
+<p>Amazon extended Bedrock AgentCore payments to AWS Marketplace: agents can now discover and buy x402-enabled software, APIs, data, and content, and pay in USD on the developer's AWS bill — no stablecoin wallet or API keys needed. When a seller replies with a 402 Payment Required and a signed quote, AgentCore checks the session budget, returns a payment token, and the charge lands as a Marketplace line item. Spending limits, approved sellers, and audit trails carry over from the AgentCore payments launch in August, and a new Marketplace connector in AgentCore Gateway helps agents discover sellers; Tavily is among the first verified sellers.</p>
+<p><strong>Why it matters:</strong> Agentic commerce has been mostly talk and stablecoin demos; this is the first version that fits how enterprises already buy software — invoiced, audited, and capped. The real test is whether companies trust agents with a budget at all, and AWS is betting that familiar billing rails are what tips that decision.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/">AWS Machine Learning Blog</a></p>
+</div>
+<div class="story">
+<h3>4. OpenAI ships a security suite: Daybreak Red and Blue, Codex Security Plugin, PR scans</h3>
+<p>OpenAI published a batch of security-focused material in one day. Daybreak Red is a reference architecture for supervised security investigations, with safety controls, setup, and monitoring; Daybreak Blue is the onboarding path for the same family of tools. Alongside them, OpenAI demoed PR scans — reviewing security scan results inside a pull-request workflow — and the Codex Security Plugin, which brings security checks into Codex's workflow from setup through results review.</p>
+<p><strong>Why it matters:</strong> This is the other half of OpenAI's defender push from earlier in the month: not just patching vulnerabilities with models, but packaging the tooling so security teams can run supervised investigations and bake checks into the code-review loop. The supervised framing matters — these are tools for humans doing investigations, not autonomous agents let loose on a codebase.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/business/learn/deploying-daybreak-red">OpenAI</a> (summary from the feed description), <a href="https://openai.com/business/learn/daybreak-blue-onboarding-demo">OpenAI</a> (summary from the feed description), <a href="https://openai.com/business/learn/pr-scans-demo">OpenAI</a> (summary from the feed description), <a href="https://openai.com/business/learn/codex-security-plugin-demo">OpenAI</a> (summary from the feed description)</p>
+</div>
+<div class="story">
+<h3>5. Gemini API gets Tool Retrieval for agents with big tool libraries</h3>
+<p>Google launched Tool Retrieval in preview in the Gemini API (Interactions API). Instead of sending a full tool library's parameter schemas on every request, an agent keeps the library on standby — the model sees each tool's name and description — and the API loads a tool's full schema only when the model asks for it by name, inside the same request. It works with Gemini 3.6 and later models.</p>
+<p><strong>Why it matters:</strong> As agents accumulate dozens or hundreds of tools, stuffing every schema into every prompt inflates tokens, adds latency, and degrades tool selection. Deferring schemas is a small, practical fix to a scaling problem every serious agent builder hits — and a sign that the API layer is being redesigned around agents, not single-turn chat.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/">Google AI Blog</a></p>
+</div>
+<h2>Also notable</h2>
+<ul>
+<li>OpenAI explained how it built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to keep ChatGPT fast. (<a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast">OpenAI</a>; article fetch 403 — summary from the feed description)</li>
+<li>BMW described how it governs hundreds of agents across thousands of developers — an agent harness, MCP gateway, central registry, and graduated autonomy levels, codified as infrastructure as code. (<a href="https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers/">AWS</a>)</li>
+<li>Kimi Code CLI now runs with models on Amazon Bedrock, extending the Kimi K3.1 Pro footprint on AWS. (<a href="https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/">AWS</a>)</li>
+<li>AWS Machine Learning Blog also posted a 2026 review of SageMaker Inference launches (part 2), SageMaker AI detection of latency drift, idle GPUs, and missed inference optimizations, and a piece on running a whole selling business in AWS Quick. (<a href="https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/">AWS</a>, <a href="https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-now-detects-latency-drift-idle-gpus-and-missed-optimizations-on-your-inference-endpoints/">AWS</a>, <a href="https://aws.amazon.com/blogs/machine-learning/run-your-whole-selling-business-in-aws-quick/">AWS</a>)</li>
+<li>Latent Space interviewed Linear COO Cristina Cordova on scaling go-to-market to $100M ARR — over 50% of tickets written by agents, and selling without SDRs or FDEs. (<a href="https://latent.space/p/linear-scaling/">Latent Space</a>)</li>
+<li>a16z brought back its FDE Fellowship, an eight-week cohort of forward-deployed-engineer leaders from SpaceXSI, OpenAI, Harvey, and others. (<a href="https://www.a16z.news/p/the-a16z-fde-fellowship-is-back">a16z News</a>)</li>
+<li>Walter Isaacson joined Google to discuss curiosity and creativity in the AI age, in a new Dialogues episode. (<a href="https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/">Google AI Blog</a>)</li>
+<li>No new posts today from The Batch, xAI release notes, a16z YouTube, the AI + a16z podcast, One Useful Thing, Meta Newsroom, Microsoft AI, Amazon Science, or the a16z AI Policy Brief. (a16z.com re-listed no new items.)</li>
+</ul>
+<h2>Worth a listen / read</h2>
+<ul>
+<li><strong>🎧 AI Daily Brief — "The 10 Biggest Days in AI History."</strong> On the day of Anthropic's IPO, NLW looks back at the ten days that shaped generative AI — from OpenAI's founding and the launch of ChatGPT to the DeepSeek selloff and Claude's coding breakthrough — each chosen because it changed what AI could do, who was ahead, or who got a say in what happened next. A good retrospective for the week the first frontier lab went public. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-10-Biggest-Days-in-AI-History-e3smt2e">AI Daily Brief</a>)</li>
+<li><strong>📖 Latent Space AINews — "Anthropic successfully completes largest IPO in history, valued at $1.5T."</strong> The fullest single read on the IPO day — pricing, first-day trading, Amodei's safety remarks, S-1 financials — plus the Genie 4 developer opening and the week's other model and chip news in the same issue. (<a href="https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/">Latent Space</a>)</li>
+<li><strong>📖 Anthropic — "Anthropic announces closing of initial public offering."</strong> The primary source on the close: share counts, the $26B concurrent private placement, and the underwriter list. (<a href="https://www.anthropic.com/news/ipo-close">Anthropic</a>)</li>
+<li><strong>📖 BMW / AWS — "How the BMW Group governs hundreds of agents across thousands of developers."</strong> The most concrete enterprise agent-governance write-up in a while: agent harness, MCP gateway, registry, and graduated autonomy, all as infrastructure as code. (<a href="https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers/">AWS</a>)</li>
+</ul>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-19.html">2026-11-19</a></li>
+<li><a href="2026-11-18.html">2026-11-18</a></li>
+<li><a href="2026-11-17.html">2026-11-17</a></li>
+<li><a href="2026-11-16.html">2026-11-16</a></li>
+<li><a href="2026-11-15.html">2026-11-15</a></li>
+<li><a href="2026-11-14.html">2026-11-14</a></li>
+<li><a href="2026-11-13.html">2026-11-13</a></li>
+<li><a href="2026-11-12.html">2026-11-12</a></li>
+<li><a href="2026-11-11.html">2026-11-11</a></li>
+<li><a href="2026-11-10.html">2026-11-10</a></li>
+<li><a href="2026-11-09.html">2026-11-09</a></li>
+<li><a href="2026-11-08.html">2026-11-08</a></li>
+<li><a href="2026-11-07.html">2026-11-07</a></li>
+<li><a href="2026-11-06.html">2026-11-06</a></li>
+<li><a href="2026-11-05.html">2026-11-05</a></li>
+<li><a href="2026-11-04.html">2026-11-04</a></li>
+<li><a href="2026-11-03.html">2026-11-03</a></li>
+<li><a href="2026-11-02.html">2026-11-02</a></li>
+<li><a href="2026-11-01.html">2026-11-01</a></li>
+<li><a href="2026-10-31.html">2026-10-31</a></li>
+<li><a href="2026-10-30.html">2026-10-30</a></li>
+<li><a href="2026-10-29.html">2026-10-29</a></li>
+<li><a href="2026-10-28.html">2026-10-28</a></li>
+<li><a href="2026-10-27.html">2026-10-27</a></li>
+<li><a href="2026-10-26.html">2026-10-26</a></li>
+<li><a href="2026-10-25.html">2026-10-25</a></li>
+<li><a href="2026-10-24.html">2026-10-24</a></li>
+<li><a href="2026-10-23.html">2026-10-23</a></li>
+<li><a href="2026-10-22.html">2026-10-22</a></li>
+<li><a href="2026-10-21.html">2026-10-21</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
+<a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+</main>
+</body>
+</html>
