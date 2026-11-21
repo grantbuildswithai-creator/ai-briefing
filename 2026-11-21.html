@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B1A">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>2026-11-21 — AI Briefing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
+<main>
+<a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+<h1>AI Briefing — Sat, Nov 21, 2026</h1>
+<h2>Top stories</h2>
+<div class="story">
+<h3>1. Riemann Hypothesis claimed proved — twice, independently, on the same day</h3>
+<p>Two mathematicians claimed independent proofs of the Riemann Hypothesis on November 20, the most famous open problem in mathematics. Anthropic mathematician Levent Alpöge says he found a proof of the Generalized Riemann Hypothesis working with Claude, releasing only Lean-formalized code — about 1.3GB, with a prose version reportedly running past 250,000 pages — rather than a conventional paper. The work began October 6, with the final step landing November 16. Separately, Alessandro Masullo announced a purely human proof, reported as a roughly 940-page GRH draft.</p>
+<p><strong>Why it matters:</strong> If either claim survives expert review it would be the largest demonstrated AI advance in mathematics by a wide margin — and the contrast between the two approaches is the story: a machine-checkable proof no human will ever read in full versus a 940-page human draft. But "claimed" is doing heavy work here. OpenAI's September Millennium Prize claim is the cautionary tale — critics argued its Lean proof did not match the natural-language result — and both new claims will take years to verify. Lean can confirm the formalized statement is GRH with a bug chance well under 1%, but humans still have to confirm the formal statement is actually the theorem claimed. The Claude model used and the degree of human steering have not been disclosed.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/">Latent Space</a></p>
+</div>
+<div class="story">
+<h3>2. OpenAI moves against adversarial distillation — reasoning-extraction attacks fall from 54% to 0.2%</h3>
+<p>OpenAI published how it detects and disrupts adversarial distillation: using a frontier model's outputs without authorization to train a copycat model that inherits the capabilities but not the safeguards. The sharpest risk is extraction of protected reasoning — the model's chain-of-thought traces, which make especially valuable training data. In GPT-6.2 Astra and GPT-6.2 Sol, OpenAI strengthened defenses against that extraction, and in an internal adaptive evaluation the average attack success rate fell from 54.0% against GPT-6 Astra with its original safeguards to 0.2% against GPT-6.2 Astra with the updated ones. The defenses combine adversarial testing, model training, classifiers, API-level protections, and investigations into coordinated extraction attempts, aligned more closely with the safeguards used for biology and cybersecurity.</p>
+<p><strong>Why it matters:</strong> Distillation is the quiet leak in the frontier-lab business model and safety case: a model that helps defenders find vulnerabilities can also teach an attacker to exploit them, and a model that assists biological research can teach someone to build a pathogen — if the capabilities transfer without the refusals. OpenAI publishing its detection playbook, and a 270-fold reduction in extraction success, is both a defense of its own models and an attempt to set an industry norm before the technique spreads further.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/combatting-adversarial-distillation">OpenAI</a></p>
+</div>
+<div class="story">
+<h3>3. OpenAI launches MedChemBench, a drug-discovery benchmark — GPT-6.2 Astra scores 84.5%</h3>
+<p>OpenAI introduced MedChemBench, a benchmark that tests whether AI models can do medicinal-chemistry reasoning: reading molecular structures, interpreting experimental results, and choosing which compounds to test next. It comprises 99 problems drawn from 117 published papers and patents, covering 761 distinct molecular structures, and grades structure reconstruction, evidence-backed explanations, compound rankings, and agreement with measured properties. At the highest reasoning setting, GPT-6.2 Astra earned 84.5% of available credit, ahead of GPT-6 Astra at 83.3%, GPT-6.1 Sol at 82.0%, and GPT-5.6 Sol at 58.2%. Selecting compounds and predicting numerical properties proved harder for the models than reconstructing structures and explaining evidence.</p>
+<p><strong>Why it matters:</strong> Drug discovery is the classic multi-objective tradeoff problem — a compound that hits its target may be poorly absorbed or break down too fast — and a benchmark that grades those tradeoffs together is a better proxy for real lab usefulness than single-property tests. The narrow gap between the top three GPT-6 models, and the big jump from GPT-5.6, suggests the gains here are coming from reasoning depth more than raw scale.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/introducing-medchembench">OpenAI</a></p>
+</div>
+<div class="story">
+<h3>4. Chinese AI labs warn new US chip restrictions could delay model releases</h3>
+<p>Chinese AI labs are warning that new US chip restrictions could delay upcoming model releases, according to headlines in today's AI Daily Brief. The warning comes as export controls continue to tighten around the advanced chips that frontier training depends on, and lands the same week Anthropic's IPO and Google's Gemini Neon launch kept the spotlight on the compute-rich US labs.</p>
+<p><strong>Why it matters:</strong> Export controls have been the slow-burning variable in the AI race — their effect shows up not as a single dramatic cutoff but as delayed releases and re-engineered training runs. If Chinese labs start slipping schedules publicly, it is an early signal the latest round of restrictions is biting where it counts.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-You-Should-Try-Gemini-Neon-Even-if-You-Love-Fable-e3sod5e">AI Daily Brief</a> (headline summary from the episode)</p>
+</div>
+<div class="story">
+<h3>5. a16z backs Linq, messaging infrastructure for AI agents</h3>
+<p>Andreessen Horowitz announced an investment in Linq, a platform that lets companies put AI agents in front of customers over messaging channels — Apple Messages for Business, RCS, and WhatsApp — rather than inside an app. Linq handles the messaging plumbing so agents can find products, build carts, and check out in a single thread; DoorDash is using it to let consumers order food through Apple Messages for Business. Linq is an approved Apple Messaging Service Provider. The company started in Birmingham, Alabama in 2020 as digital business cards, pivoted through sales software and AI sales agents, and rebuilt around the messaging infrastructure its own agent was built on.</p>
+<p><strong>Why it matters:</strong> Agents accounted for a large share of internet traffic in 2026, and the question of where users actually meet them is still open. Linq's bet is that the answer is the messaging thread people already live in — and that the infrastructure layer, not the agent itself, is where the durable value sits.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://a16z.com/announcement/investing-in-linq">a16z</a></p>
+</div>
+<h2>Also notable</h2>
+<ul>
+<li>The Batch #380: Andrew Ng reflects on Jensen Huang's legacy at Nvidia — the leader who backed deep learning before it was obvious — plus Claude Fable 5.2, Anthropic's IPO, and World Labs releasing Atlas to developers. (<a href="https://www.deeplearning.ai/the-batch/issue-380">The Batch</a>)</li>
+<li>Meta's Open Source AI for Science Summit: the brain-data project with Rothschild Hospital Foundation and the University of Montreal grows its target from 15,000 to 25,000 hours of openly shared brain data; Meta released a faster version of its Universal Model for Atoms, and its RealChem chemistry-visualization tool is now available to high school teachers. (<a href="https://about.fb.com/news/2026/11/advancing-science-together-highlights-from-the-open-source-ai-for-science-summit/">Meta</a>)</li>
+<li>Hebbia reports GPT-6 Astra improved its financial-research product Matrix: a 13.6-point lead over the best alternative tested on citing required source types, 99.5% of cited excerpts relevant, and 97.9% of presentation requirements met in client-ready decks. (<a href="https://openai.com/business/customer-stories/hebbia">OpenAI</a>)</li>
+<li>Amazon Textract Insights is generally available: describe the fields you need in natural language and get structured results from mixed document packets up to 3,000 pages, each value carrying a confidence score and page-level grounding. (<a href="https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/">AWS</a>)</li>
+<li>AWS launched the SageMaker HyperPod Global Inference Gateway — one endpoint across regions and clusters — plus managed cluster extensions for observability and user management in HyperPod Slurm. (<a href="https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/">AWS</a>, <a href="https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/">AWS</a>)</li>
+<li>AWS also posted a distributed KV-caching agent skill for cutting self-hosted LLM cost and latency, new multi-agent flows in AWS Quick, and a Standard Bank case study on automating AI risk assessment for generative AI. (<a href="https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill/">AWS</a>, <a href="https://aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together/">AWS</a>, <a href="https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/">AWS</a>)</li>
+<li>a16z welcomed former US Ambassador to Malaysia Edgard Kagan as an advisor to its Global Affairs team, focused on Indo-Pacific partnerships for American technology companies. (<a href="https://a16z.com/welcome-edgard-kagan">a16z</a>, <a href="https://www.a16z.news/p/welcome-edgard-kagan">a16z News</a>)</li>
+<li>Thinking Machines launched Inkling 2 Mini, an open-weight mixture-of-experts model (26B total, 3B active), and Tencent released Hy4, an open-weight multimodal MoE — both noted in this week's Latent Space AINews roundup. (<a href="https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/">Latent Space</a>)</li>
+<li>a16z's Charts of the Week argues "There is No Gen Z" — generational labels hide more than they explain. (<a href="https://www.a16z.news/p/charts-of-the-week-there-is-no-gen">a16z News</a>)</li>
+<li>No new posts today from xAI release notes, a16z YouTube, the AI + a16z podcast, Anthropic News, Google AI Blog, One Useful Thing, Microsoft AI, Amazon Science, or the a16z AI Policy Brief.</li>
+</ul>
+<h2>Worth a listen / read</h2>
+<ul>
+<li><strong>🎧 AI Daily Brief — "Why You Should Try Gemini Neon (Even if You Love Fable)."</strong> Gemini Neon edged out Fable on a coding benchmark, but NLW's pitch is as a second opinion: Neon helped him find the story in an oil episode that Claude and ChatGPT kept turning into a Wikipedia entry. Also in the headlines: Anthropic's first day of trading up 17%, and Chinese labs warning that new US chip curbs could delay releases. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-You-Should-Try-Gemini-Neon-Even-if-You-Love-Fable-e3sod5e">AI Daily Brief</a>)</li>
+<li><strong>📖 Latent Space AINews — "Riemann Hypothesis proved...twice independently."</strong> The fullest single read on the two proof claims — Alpöge's Claude-assisted Lean proof and Masullo's human draft — with the verification caveats, the OpenAI September precedent, and the contrast between a proof no human will read and one a human wrote. Plus Inkling 2 Mini, Tencent Hy4, and the week's benchmark news. (<a href="https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/">Latent Space</a>)</li>
+<li><strong>📖 Latent Space — "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification."</strong> With AI writing most new code, "slop" was the industry's word of the year — and formal verification, led by Lean and tools like &Truth's &Atlas and Stanford's cvc5 solver, is emerging as the way to prove software correct rather than merely test it. A useful companion to the Riemann story: the same Lean machinery is behind both. (<a href="https://latent.space/p/formal-verification/">Latent Space</a>)</li>
+<li><strong>📖 The Batch #380 — "Jensen Huang's Nvidia legacy, Claude Fable 5.2 and Anthropic's IPO, World Labs Releases Atlas to Developers."</strong> Andrew Ng's personal reflection on the Nvidia founder who backed deep learning early, and on what the AI world loses when an irreplaceable leader leaves. (<a href="https://www.deeplearning.ai/the-batch/issue-380">The Batch</a>)</li>
+</ul>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-20.html">2026-11-20</a></li>
+<li><a href="2026-11-19.html">2026-11-19</a></li>
+<li><a href="2026-11-18.html">2026-11-18</a></li>
+<li><a href="2026-11-17.html">2026-11-17</a></li>
+<li><a href="2026-11-16.html">2026-11-16</a></li>
+<li><a href="2026-11-15.html">2026-11-15</a></li>
+<li><a href="2026-11-14.html">2026-11-14</a></li>
+<li><a href="2026-11-13.html">2026-11-13</a></li>
+<li><a href="2026-11-12.html">2026-11-12</a></li>
+<li><a href="2026-11-11.html">2026-11-11</a></li>
+<li><a href="2026-11-10.html">2026-11-10</a></li>
+<li><a href="2026-11-09.html">2026-11-09</a></li>
+<li><a href="2026-11-08.html">2026-11-08</a></li>
+<li><a href="2026-11-07.html">2026-11-07</a></li>
+<li><a href="2026-11-06.html">2026-11-06</a></li>
+<li><a href="2026-11-05.html">2026-11-05</a></li>
+<li><a href="2026-11-04.html">2026-11-04</a></li>
+<li><a href="2026-11-03.html">2026-11-03</a></li>
+<li><a href="2026-11-02.html">2026-11-02</a></li>
+<li><a href="2026-11-01.html">2026-11-01</a></li>
+<li><a href="2026-10-31.html">2026-10-31</a></li>
+<li><a href="2026-10-30.html">2026-10-30</a></li>
+<li><a href="2026-10-29.html">2026-10-29</a></li>
+<li><a href="2026-10-28.html">2026-10-28</a></li>
+<li><a href="2026-10-27.html">2026-10-27</a></li>
+<li><a href="2026-10-26.html">2026-10-26</a></li>
+<li><a href="2026-10-25.html">2026-10-25</a></li>
+<li><a href="2026-10-24.html">2026-10-24</a></li>
+<li><a href="2026-10-23.html">2026-10-23</a></li>
+<li><a href="2026-10-22.html">2026-10-22</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
+<a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
+</main>
+</body>
+</html>
