@@ -5,59 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0B0B1A">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<title>2026-11-24 — AI Briefing</title>
+<title>2026-11-25 — AI Briefing</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
 <main>
 <a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
-<h1>AI Briefing — Tue, Nov 24, 2026</h1>
+<h1>AI Briefing — Wed, Nov 25, 2026</h1>
 <h2>Top stories</h2>
 <div class="story">
-<h3>1. Jensen Huang is back as Nvidia CEO, eleven days after resigning</h3>
-<p>Nvidia's board reinstated founder Jensen Huang as CEO, president, and board member on Nov 23, citing input from senior U.S. officials on national security — Latent Space reports the President dialed into the board meeting. The news sent markets soaring. Colette Kress remains CFO, the independent directors' investigation into the affair and espionage allegations continues, and Huang's Senate hearing is still due in about a week; the board also formed a committee for national security and export control.</p>
-<p><strong>Why it matters:</strong> The leadership crisis that defined Nvidia's last two weeks is over in one sense — the founder is back with explicit White House backing — but the governance questions are not: the investigation and the Senate hearing are still pending, and the episode raises the uncomfortable question of whether one CEO has become too central to America's AI strategy to be removed.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Too-Big-to-Fire-Jensen-Huang-Is-Back-as-Nvidia-CEO-e3ssrpk">AI Daily Brief</a>, <a href="https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/">Latent Space</a></p>
+<h3>1. Gemini 4 Neon puts Google DeepMind back in the frontier race</h3>
+<p>Google DeepMind's Gemini 4 Neon is out, and the early numbers are strong: it beats OpenAI's GPT-6.2 Astra and Anthropic's Claude Fable on LiveBench, and cut one developer's TypeScript/Rust benchmark runtime by 48.6%. Adoption is surging — Neon set a Day-1 usage record on Google's paid APIs, Perplexity has already run more than 120B Neon tokens (doubling daily volume in three days), and it's now available to Google Workspace customers through the Gemini app. Perplexity's CEO places Neon "between Opus and Fable" on intelligence, but best on response style.</p>
+<p><strong>Why it matters:</strong> After a stretch in which Gemini 3 disappointed and observers wrote DeepMind off as a frontier lab, Neon is a credible re-entry — and the usage figures suggest developers are switching in practice, not just on benchmarks. The open question is whether the strong first week holds once the novelty fades and the model faces sustained, harder workloads.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a></p>
 </div>
 <div class="story">
-<h3>2. OpenAI and Cisco launch Shirudo, an open-source shield for unpatched Linux systems</h3>
-<p>Shirudo (Japanese for "shield") is an open-source runtime that uses eBPF to protect running Linux systems while patches are still being prepared — instead of blocking a vulnerable operation outright (which can take a service offline), teams test a temporary "shield" that blocks only the exploit behavior and deploy it without restarting. In a demo, a Codex-generated shield blocked a Java4Shell exploit attempt against a running Elasticsearch service. Shields are cryptographically signed, verified before loading, and logged via TPM.</p>
-<p><strong>Why it matters:</strong> Finding a vulnerability is now often the fast part; patching every affected system takes days or weeks, and that gap is where exploits land. Shirudo turns the patch window from dead time into defended time — and because it's open source, a shield written once can be reused by everyone running the same software.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/introducing-shirudo">OpenAI News</a></p>
+<h3>2. AI models reportedly crack two landmark math problems — verification still pending</h3>
+<p>Two extraordinary claims surfaced this week, both unconfirmed. An Anthropic GitHub repo reportedly contains a proof by an internal Claude research model that VP ≠ VNP — the algebraic analogue of P vs NP, open since 1979 — and OpenAI posted its own proof, which it says was "obtained on November 6, 2026." Separately, claims circulated that Claude helped prove the Riemann hypothesis; the mathematician behind the Lean code release said the "250,000+ pages" figure was a joke and described the code as compiling but rough. Neither lab named a model or published a formal announcement.</p>
+<p><strong>Why it matters:</strong> If either proof holds up under peer review, it would be the most significant AI-assisted mathematics result ever — a machine settling a problem humans have failed at for decades. But "reportedly" is doing heavy lifting here: no independent verification has been published yet, and the Riemann claim in particular looks more like a formalization artifact than a settled proof. Treat both as watch-this-space, not settled history.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Just-Made-History-in-the-Middle-of-a-Meltdown-e3sv3tf">AI Daily Brief</a>, <a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a></p>
 </div>
 <div class="story">
-<h3>3. Google Search gets personal: Wallet and Drive join Personal Intelligence in AI Mode</h3>
-<p>Google is extending Personal Intelligence in Search's AI Mode beyond Gmail, Calendar, and Photos: users can now opt in to connect Google Wallet and, in the coming weeks, Drive and the Gemini app, so Search answers draw on spending, documents, and chats. Examples Google gives: mapping spending against financial goals, optimizing credit-card rewards from linked cards, and building plans from scattered docs. Wallet data is read-only — AI Mode can't move or invest money — and connections can be toggled off at any time.</p>
-<p><strong>Why it matters:</strong> This is the other half of the personal-AI bet: not a smarter model, but a model with access to your life. The utility is obvious — Search that knows your budget and your files — and so is the trust question, which is why Google is leaning hard on opt-in controls and a visible "Personalization" indicator showing what context was used.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/">Google AI Blog</a></p>
+<h3>3. GPT-6 models design proteins from reasoning alone — and lab tests show they bind</h3>
+<p>OpenAI released a preprint showing its GPT-6 models can design new protein shapes and amino-acid sequences using only reasoning and code, without calling specialized biology models. In lab tests with Onava, proteins based on GPT-6.2's designs showed evidence of binding across five targets; 14 of 107 resequenced proteins bound, and most redesigned antibodies retained binding. Researchers could steer designs by prompting where a protein should attach and what shape it should take.</p>
+<p><strong>Why it matters:</strong> Protein design has been the domain of specialized models that each need expert handling. A general-purpose model that can do the job by being told what to build in plain language lowers the skill barrier dramatically — and raises the stakes, since the same capability that designs a therapeutic antibody is, in principle, the capability that designs a harmful one.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities">OpenAI News</a></p>
 </div>
 <div class="story">
-<h3>4. Microsoft joins OpenAI's perplexity pact: MAI-2 Base scores 0.819 on OpenAI's eval set</h3>
-<p>Following yesterday's Pachocki essay proposing shared pretraining limits, Microsoft became the first lab to cosign — running its MAI-2 Base model on OpenAI's evaluation set and reporting 0.819 log-perplexity, in GPT-5.6 Sol base-model territory. Latent Space's read of the essay adds texture: an unreleased OpenAI internal model already sits below GPT-6.2 Astra, and Pachocki expects another capability jump in the ~0.68–0.70 window, possibly as soon as 2027, with a "steep acceleration in 2026."</p>
-<p><strong>Why it matters:</strong> A shared metric only works if more than one lab reports it. Microsoft joining makes the proposal real rather than rhetorical — but the test is whether Anthropic and the other frontier labs follow. The numbers also set a public clock: if the curve keeps falling at this rate, the next capability jump lands within months, not years.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/">Latent Space</a>, <a href="https://openai.com/index/perplexity-and-intelligence">OpenAI News</a></p>
-</div>
-<div class="story">
-<h3>5. Meta's Muse launches in the UK</h3>
-<p>Muse, Meta's personal AI agent, is now available to adults in the UK — its first expansion beyond the US. It connects to email, calendar, and retailer apps to handle jobs like chasing refunds or renewing car insurance, with a separate security agent checking actions against granted permissions, and approval required before anything sensitive like sending an email or making a purchase. Meta says Muse conversations and stored information are not shared with its ad systems.</p>
-<p><strong>Why it matters:</strong> Agentic assistants are now a geographic rollout story, not just a capability one — and the UK launch is the first test of whether Meta's control-first pitch (approvals, visible audit trail, data kept out of ads) travels to a market with stricter privacy expectations.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://about.fb.com/news/2026/11/muse-now-available-in-the-uk-muse-does-the-work-you-stay-in-control/">Meta Newsroom</a>, <a href="https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/">Meta Newsroom</a></p>
+<h3>4. The Nvidia fallout isn't over: House chairs say reinstatement settles nothing</h3>
+<p>Jensen Huang's reinstatement as Nvidia CEO (covered yesterday) has not closed the affair. House committee chairs say the board's decision does not resolve the smuggling and diversion questions, and Huang and board member Tim Teter will give transcribed interviews on Dec 1–2. Meanwhile the AI Daily Brief frames the week's other thread — Anthropic's IPO and the Nvidia scandal — as a backlash over who profits from AI and who gets to call the shots; Axios reports, via secondhand summary, that many Anthropic and OpenAI staff believe some unreleased models are too powerful to release safely.</p>
+<p><strong>Why it matters:</strong> The governance story is now running on two tracks at once: a congressional inquiry into chip diversion, and an internal debate at the frontier labs about whether their own models should be released at all. Both point the same way — the question of who controls frontier AI is no longer just a corporate-governance matter.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Just-Made-History-in-the-Middle-of-a-Meltdown-e3sv3tf">AI Daily Brief</a>, <a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a></p>
 </div>
 <h2>Also notable</h2>
 <ul>
-<li><strong>AWS Bedrock adds a Trusted Access API:</strong> one place to discover, request, and enroll in model-provider safety programs; the first offerings, in public preview, are Anthropic's Enterprise Frontier Safeguards and Enterprise Data Controls for Claude Fable, Mythos, and Opus/Sonnet 5.5. (<a href="https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/">AWS Machine Learning Blog</a>)</li>
-<li><strong>a16z leads Embo's round:</strong> the startup, founded by world-model researcher Danijar Hafner (Dreamer), is building a "brain for the humanoid workforce" — training world models on internet video plus robot demos, then letting agents practice skills inside the model. (<a href="https://www.a16z.news/p/investing-in-embo">a16z News</a>)</li>
-<li><strong>Meta's open-weight models in medicine:</strong> researchers are adapting Muse Glimmer, SAM 3, DINOv3, and Brain2Qwerty for VR medical training (LSU), epilepsy-source simulation (Rothschild Hospital), and rare-disease cell imaging (Columbia). Early-stage work, funded through Meta's open-science program. (<a href="https://about.fb.com/news/2026/11/researchers-using-meta-open-weight-ai-models-medical-breakthroughs/">Meta Newsroom</a>)</li>
-<li><strong>OpenAI for in-house legal:</strong> a session on connecting business context and reusable workflows for legal teams, plus a Richpanel customer story (50% of support automated in 30 days using GPT-6 Astra/Sol and Luna). (<a href="https://openai.com/business/learn/connected-intelligence-for-in-house-legal">OpenAI News</a>, <a href="https://openai.com/business/customer-stories/richpanel-ai-customer-support">link</a>)</li>
-<li><strong>xAI release notes:</strong> no new entries since Grok 4.7's availability and the Imagine image-quality retirement (both covered earlier).</li>
+<li><strong>GPT-6 Cyber validated 948 Linux kernel bugs:</strong> in one run, the model helped validate bugs that could grant local root and generated patches for maintainer review. (<a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a>)</li>
+<li><strong>Amateur astronomers find exoplanet candidates with Astra and Codex:</strong> two hobbyists searched public Kepler and TESS data; one 13.8-day signal was independently confirmed by a SETI astronomer, and 49 TESS candidates were flagged for follow-up. (<a href="https://openai.com/index/searching-for-distant-planets-with-astra">OpenAI News</a>)</li>
+<li><strong>Claude artifacts become desktop apps:</strong> artifacts can now be installed as desktop apps with connectors and notifications (beta, all plans), and MCP turns two — with more than 10,000 Claude connectors. (<a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a>)</li>
+<li><strong>Z.ai previews GLM 5.4:</strong> a looped model that runs its middle layers twice, beating Qwen3.8-27B on GAIA (69.90 vs 66.99), released under Apache 2.0; meanwhile Grok is falling behind in the headlines. (<a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a>, <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Just-Made-History-in-the-Middle-of-a-Meltdown-e3sv3tf">AI Daily Brief</a>)</li>
+<li><strong>Gemini partners with Golden State:</strong> Google Gemini will power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. (<a href="https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/">Google AI Blog</a>)</li>
+<li><strong>Amazon's thousand-robot routing:</strong> Amazon Science frames multirobot motion planning as an optimal-transport problem, using a Schrödinger bridge to get near-optimal routing at fulfillment-center scale. (<a href="https://www.amazon.science/blog/lazy-gas-hot-gas-and-a-thousand-robots">Amazon Science</a>)</li>
+<li><strong>iFood scales coding agents across 15,000 repositories:</strong> a customer story on rolling out agentic coding at enterprise scale. (<a href="https://openai.com/business/customer-stories/ifood">OpenAI News</a>)</li>
 </ul>
 <h2>Worth a listen / read</h2>
 <ul>
-<li><strong>🎧 AI Daily Brief (Nov 23) — "Too Big to Fire: Jensen Huang Is Back as Nvidia CEO."</strong> Eleven days after his resignation, Huang is back with White House backing and the board citing national security. NLW's framing question is the one that matters: has America's AI strategy become so dependent on one CEO that he's effectively too big to fire — and what does that mean for the investigation that is still running? (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Too-Big-to-Fire-Jensen-Huang-Is-Back-as-Nvidia-CEO-e3ssrpk">episode</a>)</li>
-<li><strong>📖 a16z — "Welcome to the B2A Economy: How Agents Buy."</strong> Based on 11,307 agent runs across Muse, Grok Bot, Instinct, and Dots: agents converge on the same default picks (a product chosen by one had a 73% chance of being chosen by another), look at very few options, and decide mostly on price and reviews — unless the prompt names a specific need, which flips the pick (Dyson beats Shark for fine hair, 88% when used daily). The practical takeaway: to sell to agents, win the narrow use case and make your product crawlable. (<a href="https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents">article</a>)</li>
+<li><strong>🎧 AI Daily Brief (Nov 24) — "AI Just Made History in the Middle of a Meltdown."</strong> NLW's framing is the tension of the week: AI may have just helped settle landmark math problems at the exact moment the Nvidia scandal and Anthropic's IPO are fueling a backlash over who profits from AI and who controls it. The episode is a good gauge of how the industry is talking about both stories at once. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Just-Made-History-in-the-Middle-of-a-Meltdown-e3sv3tf">episode</a>)</li>
+<li><strong>📖 Latent Space — "[AINews] Gemini 4 Neon marks GDM's full return as a Frontier Lab."</strong> The fullest single read on the day: Neon benchmarks and adoption, the VP ≠ VNP and Riemann proof claims with appropriate caveats, GPT-6's protein and kernel-bug work, and the ongoing Nvidia fallout. Dense but well-sourced. (<a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">article</a>)</li>
+<li><strong>📖 OpenAI — "GPT-6 models demonstrate intrinsic protein-design capabilities."</strong> The preprint write-up, in OpenAI's own words, on how a general-purpose model designs proteins by reasoning and code — and the lab results behind the binding claims. (<a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities">article</a>)</li>
 </ul>
-<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-23.html">2026-11-23</a></li>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-24.html">2026-11-24</a></li>
+<li><a href="2026-11-23.html">2026-11-23</a></li>
 <li><a href="2026-11-22.html">2026-11-22</a></li>
 <li><a href="2026-11-21.html">2026-11-21</a></li>
 <li><a href="2026-11-20.html">2026-11-20</a></li>
@@ -85,8 +83,7 @@
 <li><a href="2026-10-29.html">2026-10-29</a></li>
 <li><a href="2026-10-28.html">2026-10-28</a></li>
 <li><a href="2026-10-27.html">2026-10-27</a></li>
-<li><a href="2026-10-26.html">2026-10-26</a></li>
-<li><a href="2026-10-25.html">2026-10-25</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
+<li><a href="2026-10-26.html">2026-10-26</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
 <a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
 </main>
 </body>
