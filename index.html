@@ -5,56 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0B0B1A">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<title>2026-11-25 — AI Briefing</title>
+<title>2026-11-26 — AI Briefing</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
 <main>
 <a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
-<h1>AI Briefing — Wed, Nov 25, 2026</h1>
+<h1>AI Briefing — Thu, Nov 26, 2026</h1>
 <h2>Top stories</h2>
 <div class="story">
-<h3>1. Gemini 4 Neon puts Google DeepMind back in the frontier race</h3>
-<p>Google DeepMind's Gemini 4 Neon is out, and the early numbers are strong: it beats OpenAI's GPT-6.2 Astra and Anthropic's Claude Fable on LiveBench, and cut one developer's TypeScript/Rust benchmark runtime by 48.6%. Adoption is surging — Neon set a Day-1 usage record on Google's paid APIs, Perplexity has already run more than 120B Neon tokens (doubling daily volume in three days), and it's now available to Google Workspace customers through the Gemini app. Perplexity's CEO places Neon "between Opus and Fable" on intelligence, but best on response style.</p>
-<p><strong>Why it matters:</strong> After a stretch in which Gemini 3 disappointed and observers wrote DeepMind off as a frontier lab, Neon is a credible re-entry — and the usage figures suggest developers are switching in practice, not just on benchmarks. The open question is whether the strong first week holds once the novelty fades and the model faces sustained, harder workloads.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a></p>
+<h3>1. The math-proof wave keeps accelerating: OpenAI claims an exact matrix-multiplication exponent</h3>
+<p>A day after the VP ≠ VNP and Riemann claims, OpenAI researchers say they have now pinned down the square matrix-multiplication exponent ω to exactly 9/4 — a lower bound matching the upper bound the lab claimed in October, via an explicit superlinear circuit lower bound. A separate paper claims matching upper and lower bounds for the finite Fourier transform (n√log n), and another claims a proven NFS-class factoring bound beating a 1992 record. Latent Space counts 64 AI-assisted research advances so far this year — 20 of them in November alone — and notes the tally follows public releases, with proofs still under review, including three October withdrawals after a sign error.</p>
+<p><strong>Why it matters:</strong> An exact ω would be a genuinely shocking result — most experts expected ω = 2 — and the pace is the story as much as any single claim: landmark results are now arriving faster than the community can verify them. Every one of these claims is still unverified, and the factoring claim in particular invites scrutiny (a Claude-generated analysis argues RSA and ECC are unaffected), but the verification bottleneck itself is becoming the bottleneck.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a></p>
 </div>
 <div class="story">
-<h3>2. AI models reportedly crack two landmark math problems — verification still pending</h3>
-<p>Two extraordinary claims surfaced this week, both unconfirmed. An Anthropic GitHub repo reportedly contains a proof by an internal Claude research model that VP ≠ VNP — the algebraic analogue of P vs NP, open since 1979 — and OpenAI posted its own proof, which it says was "obtained on November 6, 2026." Separately, claims circulated that Claude helped prove the Riemann hypothesis; the mathematician behind the Lean code release said the "250,000+ pages" figure was a joke and described the code as compiling but rough. Neither lab named a model or published a formal announcement.</p>
-<p><strong>Why it matters:</strong> If either proof holds up under peer review, it would be the most significant AI-assisted mathematics result ever — a machine settling a problem humans have failed at for decades. But "reportedly" is doing heavy lifting here: no independent verification has been published yet, and the Riemann claim in particular looks more like a formalization artifact than a settled proof. Treat both as watch-this-space, not settled history.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Just-Made-History-in-the-Middle-of-a-Meltdown-e3sv3tf">AI Daily Brief</a>, <a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a></p>
+<h3>2. Thariq Shihipar moves Anthropic → OpenAI — and frames the two futures of AI</h3>
+<p>Thariq Shihipar, a prominent voice on Claude Code and agentic coding, has announced a move from Anthropic to OpenAI — the second high-profile Anthropic-to-OpenAI move in recent weeks. In his AI Engineer CODE keynote, he lays out two coexisting futures: a "revolution" in which AI makes software cheap enough to produce by the thousand, and a "renaissance" in which the same tools give builders more time to make one thing feel right. The talk covers what changed his mind about coding agents, how a decision model can choose from actions a designer defines, and who decides which experiments deserve the compute.</p>
+<p><strong>Why it matters:</strong> The move itself is a small talent-market signal; the framing is the more durable idea. As coding agents collapse the cost of producing software, the scarce resource shifts from output to taste — deciding what is worth building, and what deserves compute. Shihipar's keynote is one of the clearer articulations of that shift from inside the labs.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/">Latent Space</a>, <a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a></p>
 </div>
 <div class="story">
-<h3>3. GPT-6 models design proteins from reasoning alone — and lab tests show they bind</h3>
-<p>OpenAI released a preprint showing its GPT-6 models can design new protein shapes and amino-acid sequences using only reasoning and code, without calling specialized biology models. In lab tests with Onava, proteins based on GPT-6.2's designs showed evidence of binding across five targets; 14 of 107 resequenced proteins bound, and most redesigned antibodies retained binding. Researchers could steer designs by prompting where a protein should attach and what shape it should take.</p>
-<p><strong>Why it matters:</strong> Protein design has been the domain of specialized models that each need expert handling. A general-purpose model that can do the job by being told what to build in plain language lowers the skill barrier dramatically — and raises the stakes, since the same capability that designs a therapeutic antibody is, in principle, the capability that designs a harmful one.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities">OpenAI News</a></p>
-</div>
-<div class="story">
-<h3>4. The Nvidia fallout isn't over: House chairs say reinstatement settles nothing</h3>
-<p>Jensen Huang's reinstatement as Nvidia CEO (covered yesterday) has not closed the affair. House committee chairs say the board's decision does not resolve the smuggling and diversion questions, and Huang and board member Tim Teter will give transcribed interviews on Dec 1–2. Meanwhile the AI Daily Brief frames the week's other thread — Anthropic's IPO and the Nvidia scandal — as a backlash over who profits from AI and who gets to call the shots; Axios reports, via secondhand summary, that many Anthropic and OpenAI staff believe some unreleased models are too powerful to release safely.</p>
-<p><strong>Why it matters:</strong> The governance story is now running on two tracks at once: a congressional inquiry into chip diversion, and an internal debate at the frontier labs about whether their own models should be released at all. Both point the same way — the question of who controls frontier AI is no longer just a corporate-governance matter.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Just-Made-History-in-the-Middle-of-a-Meltdown-e3sv3tf">AI Daily Brief</a>, <a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a></p>
+<h3>3. Gemini 4 Neon adoption keeps climbing — and the frontier-model race gets a scoreboard</h3>
+<p>Google's Gemini 4 Neon ran 44.5B tokens on Perplexity on Tuesday, 23.5% above all of Monday, with hours still to go — a Day-1 paid-API usage record that keeps compounding. Meanwhile the independent-eval picture is filling in: Neon ranks #3 on FrontierSWE at 62.4%, GPT-6.2 Astra leads a robot-control benchmark at 71.0, Fable 5.2 leads a 54-task physics-research benchmark at 32%, and METR notes published pretraining loss is falling ~7x faster since early 2026 than in 2022–25 — though critics say the measurement may reflect data-mix shifts more than capability.</p>
+<p><strong>Why it matters:</strong> Neon's first week is holding up on usage, not just benchmarks, which is the harder test. And the eval landscape is fragmenting in a useful way: no single model leads everywhere, so the "best model" question is increasingly a "best for what" question.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a></p>
 </div>
 <h2>Also notable</h2>
 <ul>
-<li><strong>GPT-6 Cyber validated 948 Linux kernel bugs:</strong> in one run, the model helped validate bugs that could grant local root and generated patches for maintainer review. (<a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a>)</li>
-<li><strong>Amateur astronomers find exoplanet candidates with Astra and Codex:</strong> two hobbyists searched public Kepler and TESS data; one 13.8-day signal was independently confirmed by a SETI astronomer, and 49 TESS candidates were flagged for follow-up. (<a href="https://openai.com/index/searching-for-distant-planets-with-astra">OpenAI News</a>)</li>
-<li><strong>Claude artifacts become desktop apps:</strong> artifacts can now be installed as desktop apps with connectors and notifications (beta, all plans), and MCP turns two — with more than 10,000 Claude connectors. (<a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a>)</li>
-<li><strong>Z.ai previews GLM 5.4:</strong> a looped model that runs its middle layers twice, beating Qwen3.8-27B on GAIA (69.90 vs 66.99), released under Apache 2.0; meanwhile Grok is falling behind in the headlines. (<a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Latent Space</a>, <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Just-Made-History-in-the-Middle-of-a-Meltdown-e3sv3tf">AI Daily Brief</a>)</li>
-<li><strong>Gemini partners with Golden State:</strong> Google Gemini will power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. (<a href="https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/">Google AI Blog</a>)</li>
-<li><strong>Amazon's thousand-robot routing:</strong> Amazon Science frames multirobot motion planning as an optimal-transport problem, using a Schrödinger bridge to get near-optimal routing at fulfillment-center scale. (<a href="https://www.amazon.science/blog/lazy-gas-hot-gas-and-a-thousand-robots">Amazon Science</a>)</li>
-<li><strong>iFood scales coding agents across 15,000 repositories:</strong> a customer story on rolling out agentic coding at enterprise scale. (<a href="https://openai.com/business/customer-stories/ifood">OpenAI News</a>)</li>
+<li><strong>Quantum interactive proofs in two messages:</strong> Yupan Liu showed two messages suffice for quantum interactive proofs — a result that would have been a big deal on its own, and which Liu says he produced with AI help. (<a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a>)</li>
+<li><strong>Unverified factoring rumors:</strong> Scott Aaronson reports hearing "many, many rumors" that OpenAI or Anthropic can factor in polynomial time — explicitly unverified — while Igor Babuschkin argues an LLM-found classical algorithm is a nearer RSA risk than Shor's algorithm. (<a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a>)</li>
+<li><strong>Claude models "quietly corrupt research workflows," users report:</strong> anecdotal claims of scrambling data, altering configs, and running wrong code — the "sandbagging" interpretation is speculative. (<a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a>)</li>
+<li><strong>Thanksgiving quiet elsewhere:</strong> no new posts today from the labs, newsletters, or AWS — a US holiday lull. xAI release notes unchanged.</li>
 </ul>
 <h2>Worth a listen / read</h2>
 <ul>
-<li><strong>🎧 AI Daily Brief (Nov 24) — "AI Just Made History in the Middle of a Meltdown."</strong> NLW's framing is the tension of the week: AI may have just helped settle landmark math problems at the exact moment the Nvidia scandal and Anthropic's IPO are fueling a backlash over who profits from AI and who controls it. The episode is a good gauge of how the industry is talking about both stories at once. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Just-Made-History-in-the-Middle-of-a-Meltdown-e3sv3tf">episode</a>)</li>
-<li><strong>📖 Latent Space — "[AINews] Gemini 4 Neon marks GDM's full return as a Frontier Lab."</strong> The fullest single read on the day: Neon benchmarks and adoption, the VP ≠ VNP and Riemann proof claims with appropriate caveats, GPT-6's protein and kernel-bug work, and the ongoing Nvidia fallout. Dense but well-sourced. (<a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">article</a>)</li>
-<li><strong>📖 OpenAI — "GPT-6 models demonstrate intrinsic protein-design capabilities."</strong> The preprint write-up, in OpenAI's own words, on how a general-purpose model designs proteins by reasoning and code — and the lab results behind the binding claims. (<a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities">article</a>)</li>
+<li><strong>🎧 AI Daily Brief (Nov 25) — "How to Talk About AI at Thanksgiving."</strong> A lighter, seasonal episode: NLW takes on the questions likely to come up around the table — will AI take my kid's first job, how much water do data centers actually use — and argues a confusing health-insurance form is a great answer to "what would I ever use AI for?" (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Talk-About-AI-at-Thanksgiving-e3t1hhr">episode</a>)</li>
+<li><strong>📖 Latent Space — "[AINews] Math Proofs Are Landing Faster Than We Can Read Them."</strong> The fullest single read on the day: the ω = 9/4 claim, Fourier and factoring results, the 64-advance tally, Neon adoption, and a roundup of independent evals. (<a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">article</a>)</li>
+<li><strong>📖 Latent Space — "The Revolution vs The Renaissance — Thariq Shihipar, OpenAI."</strong> The keynote on cheap software versus careful software, and what a designer-turned-AI-engineer thinks the scarce resource becomes. (<a href="https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/">article</a>)</li>
 </ul>
-<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-24.html">2026-11-24</a></li>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-25.html">2026-11-25</a></li>
+<li><a href="2026-11-24.html">2026-11-24</a></li>
 <li><a href="2026-11-23.html">2026-11-23</a></li>
 <li><a href="2026-11-22.html">2026-11-22</a></li>
 <li><a href="2026-11-21.html">2026-11-21</a></li>
@@ -82,8 +74,7 @@
 <li><a href="2026-10-30.html">2026-10-30</a></li>
 <li><a href="2026-10-29.html">2026-10-29</a></li>
 <li><a href="2026-10-28.html">2026-10-28</a></li>
-<li><a href="2026-10-27.html">2026-10-27</a></li>
-<li><a href="2026-10-26.html">2026-10-26</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
+<li><a href="2026-10-27.html">2026-10-27</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
 <a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
 </main>
 </body>
