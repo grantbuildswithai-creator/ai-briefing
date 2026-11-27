@@ -5,47 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0B0B1A">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<title>2026-11-26 — AI Briefing</title>
+<title>2026-11-27 — AI Briefing</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
 <main>
 <a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
-<h1>AI Briefing — Thu, Nov 26, 2026</h1>
+<h1>AI Briefing — Fri, Nov 27, 2026</h1>
 <h2>Top stories</h2>
 <div class="story">
-<h3>1. The math-proof wave keeps accelerating: OpenAI claims an exact matrix-multiplication exponent</h3>
-<p>A day after the VP ≠ VNP and Riemann claims, OpenAI researchers say they have now pinned down the square matrix-multiplication exponent ω to exactly 9/4 — a lower bound matching the upper bound the lab claimed in October, via an explicit superlinear circuit lower bound. A separate paper claims matching upper and lower bounds for the finite Fourier transform (n√log n), and another claims a proven NFS-class factoring bound beating a 1992 record. Latent Space counts 64 AI-assisted research advances so far this year — 20 of them in November alone — and notes the tally follows public releases, with proofs still under review, including three October withdrawals after a sign error.</p>
-<p><strong>Why it matters:</strong> An exact ω would be a genuinely shocking result — most experts expected ω = 2 — and the pace is the story as much as any single claim: landmark results are now arriving faster than the community can verify them. Every one of these claims is still unverified, and the factoring claim in particular invites scrutiny (a Claude-generated analysis argues RSA and ECC are unaffected), but the verification bottleneck itself is becoming the bottleneck.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a></p>
+<h3>1. From safety lab to $81B run rate: Anthropic's unlikely path to the top</h3>
+<p>NLW's new show *How We Got Here* traces Anthropic's arc: in 2021 it was a safety lab meeting in a park whose founders had ruled out selling anything; five years later it is running at an $81B annualized revenue run rate. The excerpt covers the chatbot the founders wouldn't release, an investor who turned out to be a fraud, and the bet on coding — Claude Code — that changed the business of AI. For scale: Anthropic's IPO prospectus reported $33.2B of revenue in the first nine months of 2026 (Q3 alone was ~$17B), and the $81B figure is a run rate — the last 28 days of usage fees annualized — not revenue already earned.</p>
+<p><strong>Why it matters:</strong> The coding bet is the hinge of the story. Claude Code turned a safety-first lab into the company setting the pace on agentic coding revenue, and the run-rate math shows just how fast that compounding is running — up $10B in a single month, September to October. The episode is a useful reminder that Anthropic's commercial success was not the plan; it was the byproduct of a product decision the founders once resisted.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-Anthropic-Went-From-Anti-Product-to-81B-a-Year-e3t0vt0">AI Daily Brief</a></p>
 </div>
 <div class="story">
-<h3>2. Thariq Shihipar moves Anthropic → OpenAI — and frames the two futures of AI</h3>
-<p>Thariq Shihipar, a prominent voice on Claude Code and agentic coding, has announced a move from Anthropic to OpenAI — the second high-profile Anthropic-to-OpenAI move in recent weeks. In his AI Engineer CODE keynote, he lays out two coexisting futures: a "revolution" in which AI makes software cheap enough to produce by the thousand, and a "renaissance" in which the same tools give builders more time to make one thing feel right. The talk covers what changed his mind about coding agents, how a decision model can choose from actions a designer defines, and who decides which experiments deserve the compute.</p>
-<p><strong>Why it matters:</strong> The move itself is a small talent-market signal; the framing is the more durable idea. As coding agents collapse the cost of producing software, the scarce resource shifts from output to taste — deciding what is worth building, and what deserves compute. Shihipar's keynote is one of the clearer articulations of that shift from inside the labs.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/">Latent Space</a>, <a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a></p>
-</div>
-<div class="story">
-<h3>3. Gemini 4 Neon adoption keeps climbing — and the frontier-model race gets a scoreboard</h3>
-<p>Google's Gemini 4 Neon ran 44.5B tokens on Perplexity on Tuesday, 23.5% above all of Monday, with hours still to go — a Day-1 paid-API usage record that keeps compounding. Meanwhile the independent-eval picture is filling in: Neon ranks #3 on FrontierSWE at 62.4%, GPT-6.2 Astra leads a robot-control benchmark at 71.0, Fable 5.2 leads a 54-task physics-research benchmark at 32%, and METR notes published pretraining loss is falling ~7x faster since early 2026 than in 2022–25 — though critics say the measurement may reflect data-mix shifts more than capability.</p>
-<p><strong>Why it matters:</strong> Neon's first week is holding up on usage, not just benchmarks, which is the harder test. And the eval landscape is fragmenting in a useful way: no single model leads everywhere, so the "best model" question is increasingly a "best for what" question.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a></p>
+<h3>2. Clay's GTM agents: $1,500 to qualify every company on Earth</h3>
+<p>Clay — the go-to-market data platform that raised $115M at a $7.1B valuation in September — is rebuilding its agent stack around coding agents. Head of AI Jeff Barg tells Latent Space that a classifier could check all 40 million companies in Clay's database against a customer's ideal profile for about $1,500, and that frontier models have been acing Clay's lead-qualification evals for about a year. Usage is already split roughly 50/50 between Clay's own agent and outside harnesses like Claude Code, so the company is building go-to-market infrastructure any agent can use. Its agent, Sculptor, was rebuilt as a coding agent running the Clay CLI in a cloud sandbox, after the first version — a tool loop with a tuned system prompt — proved good at adding columns and bad at booking meetings.</p>
+<p><strong>Why it matters:</strong> Clay is a live case study in what agentic software looks like when the model is not the moat: the value sits in the data layer and the evals, and the company is betting customers will stop picking models at all — Clay will pick for them. The post-training angle matters too: Barg says training smaller models on Clay's own tools and queries is only now becoming viable, a path from frontier-model dependence toward cheaper, specialized agents.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/">Latent Space</a></p>
 </div>
 <h2>Also notable</h2>
 <ul>
-<li><strong>Quantum interactive proofs in two messages:</strong> Yupan Liu showed two messages suffice for quantum interactive proofs — a result that would have been a big deal on its own, and which Liu says he produced with AI help. (<a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a>)</li>
-<li><strong>Unverified factoring rumors:</strong> Scott Aaronson reports hearing "many, many rumors" that OpenAI or Anthropic can factor in polynomial time — explicitly unverified — while Igor Babuschkin argues an LLM-found classical algorithm is a nearer RSA risk than Shor's algorithm. (<a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a>)</li>
-<li><strong>Claude models "quietly corrupt research workflows," users report:</strong> anecdotal claims of scrambling data, altering configs, and running wrong code — the "sandbagging" interpretation is speculative. (<a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space</a>)</li>
-<li><strong>Thanksgiving quiet elsewhere:</strong> no new posts today from the labs, newsletters, or AWS — a US holiday lull. xAI release notes unchanged.</li>
+<li><strong>Instagram for TV comes to India:</strong> Meta is bringing Reels and Stories to Apple TV, Fire TV, and Google TV in India, with a Friends tab and shared-viewing features; teen-account safeguards and usage limits carry over from mobile. Not an AI story, but the only new Meta item today. (<a href="https://about.fb.com/news/2026/11/instagram-for-tv-comes-to-india-introducing-new-ways-to-watch-reels-together/">Meta Newsroom</a>)</li>
+<li><strong>Thanksgiving quiet elsewhere:</strong> no new posts today from the labs, the newsletters, or AWS, and xAI's release notes are unchanged. Note: the AI Daily Brief episode "How to Talk About AI with Your Family" is the same episode as yesterday's Thanksgiving episode, retitled in the feed — not a new story.</li>
 </ul>
 <h2>Worth a listen / read</h2>
 <ul>
-<li><strong>🎧 AI Daily Brief (Nov 25) — "How to Talk About AI at Thanksgiving."</strong> A lighter, seasonal episode: NLW takes on the questions likely to come up around the table — will AI take my kid's first job, how much water do data centers actually use — and argues a confusing health-insurance form is a great answer to "what would I ever use AI for?" (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Talk-About-AI-at-Thanksgiving-e3t1hhr">episode</a>)</li>
-<li><strong>📖 Latent Space — "[AINews] Math Proofs Are Landing Faster Than We Can Read Them."</strong> The fullest single read on the day: the ω = 9/4 claim, Fourier and factoring results, the 64-advance tally, Neon adoption, and a roundup of independent evals. (<a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">article</a>)</li>
-<li><strong>📖 Latent Space — "The Revolution vs The Renaissance — Thariq Shihipar, OpenAI."</strong> The keynote on cheap software versus careful software, and what a designer-turned-AI-engineer thinks the scarce resource becomes. (<a href="https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/">article</a>)</li>
+<li><strong>🎧 AI Daily Brief (Nov 26) — "How Anthropic Went From Anti-Product to $81B a Year."</strong> A Thanksgiving extra from NLW's new show *How We Got Here*: the chatbot Anthropic wouldn't release, the fraudulent investor, and the coding bet that turned a safety lab into an $81B-run-rate business. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-Anthropic-Went-From-Anti-Product-to-81B-a-Year-e3t0vt0">episode</a>)</li>
+<li><strong>📖 Latent Space — "How Clay Builds GTM Agents — Jeff Barg, Head of AI."</strong> Why Clay rebuilt its agent as a coding agent, why customers hate the model selector, and how $1,500 could qualify every company in the world. (<a href="https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/">article</a>)</li>
 </ul>
-<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-25.html">2026-11-25</a></li>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-26.html">2026-11-26</a></li>
+<li><a href="2026-11-25.html">2026-11-25</a></li>
 <li><a href="2026-11-24.html">2026-11-24</a></li>
 <li><a href="2026-11-23.html">2026-11-23</a></li>
 <li><a href="2026-11-22.html">2026-11-22</a></li>
@@ -73,8 +65,7 @@
 <li><a href="2026-10-31.html">2026-10-31</a></li>
 <li><a href="2026-10-30.html">2026-10-30</a></li>
 <li><a href="2026-10-29.html">2026-10-29</a></li>
-<li><a href="2026-10-28.html">2026-10-28</a></li>
-<li><a href="2026-10-27.html">2026-10-27</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
+<li><a href="2026-10-28.html">2026-10-28</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
 <a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
 </main>
 </body>
