@@ -5,38 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0B0B1A">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<title>2026-11-27 — AI Briefing</title>
+<title>2026-11-28 — AI Briefing</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav class="top"><a href="index.html">← Back to today's briefing</a></nav>
 <main>
 <a class="back-btn" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
-<h1>AI Briefing — Fri, Nov 27, 2026</h1>
+<h1>AI Briefing — Sat, Nov 28, 2026</h1>
 <h2>Top stories</h2>
 <div class="story">
-<h3>1. From safety lab to $81B run rate: Anthropic's unlikely path to the top</h3>
-<p>NLW's new show *How We Got Here* traces Anthropic's arc: in 2021 it was a safety lab meeting in a park whose founders had ruled out selling anything; five years later it is running at an $81B annualized revenue run rate. The excerpt covers the chatbot the founders wouldn't release, an investor who turned out to be a fraud, and the bet on coding — Claude Code — that changed the business of AI. For scale: Anthropic's IPO prospectus reported $33.2B of revenue in the first nine months of 2026 (Q3 alone was ~$17B), and the $81B figure is a run rate — the last 28 days of usage fees annualized — not revenue already earned.</p>
-<p><strong>Why it matters:</strong> The coding bet is the hinge of the story. Claude Code turned a safety-first lab into the company setting the pace on agentic coding revenue, and the run-rate math shows just how fast that compounding is running — up $10B in a single month, September to October. The episode is a useful reminder that Anthropic's commercial success was not the plan; it was the byproduct of a product decision the founders once resisted.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-Anthropic-Went-From-Anti-Product-to-81B-a-Year-e3t0vt0">AI Daily Brief</a></p>
+<h3>1. The coding-data market explodes: startups months old are doing ~$100M a year selling training data to frontier labs</h3>
+<p>Latent Space's latest AINews leads with the training-data market: several roughly one-year-old startups are each pulling in around $100M a year in data contracts from frontier labs. Its companion episode with G2i founder Gabe Greenberg goes inside how the market works — labs pay a premium for data they get to keep exclusive, or take a discount on data a rival can also buy, and small pilot orders of a few million dollars turn into much larger engagements. A good training task, Greenberg explains, sits just ahead of what a model can do today: senior engineers design the task, pick the starting data, and build a verifier that can grade the result. G2i itself went from $15M to a projected ~$100M in revenue without venture capital. The next markets, he says, are CAD, mechanical engineering, and chip design.</p>
+<p><strong>Why it matters:</strong> Training data has quietly become one of the biggest line items in the frontier-lab economy — and a moat in its own right. The exclusivity premium means the richest labs can buy data their rivals never see, while the shared-data discount keeps the market liquid. As models converge on capability, who owns the best verifiable tasks may matter as much as who owns the most compute.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-inside-the-exploding-coding-data-market/">Latent Space</a> · <a href="https://latent.space/p/inside_the_ai_training_data_market_gabe_greenberg_g2i/">Latent Space</a></p>
 </div>
 <div class="story">
-<h3>2. Clay's GTM agents: $1,500 to qualify every company on Earth</h3>
-<p>Clay — the go-to-market data platform that raised $115M at a $7.1B valuation in September — is rebuilding its agent stack around coding agents. Head of AI Jeff Barg tells Latent Space that a classifier could check all 40 million companies in Clay's database against a customer's ideal profile for about $1,500, and that frontier models have been acing Clay's lead-qualification evals for about a year. Usage is already split roughly 50/50 between Clay's own agent and outside harnesses like Claude Code, so the company is building go-to-market infrastructure any agent can use. Its agent, Sculptor, was rebuilt as a coding agent running the Clay CLI in a cloud sandbox, after the first version — a tool loop with a tuned system prompt — proved good at adding columns and bad at booking meetings.</p>
-<p><strong>Why it matters:</strong> Clay is a live case study in what agentic software looks like when the model is not the moat: the value sits in the data layer and the evals, and the company is betting customers will stop picking models at all — Clay will pick for them. The post-training angle matters too: Barg says training smaller models on Clay's own tools and queries is only now becoming viable, a path from frontier-model dependence toward cheaper, specialized agents.</p>
-<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/">Latent Space</a></p>
+<h3>2. "AI is Too Big to Fail": could Washington let the AI industry collapse?</h3>
+<p>As Senator Adam Schiff pushes to rule out an AI bailout, NLW asks whether Washington could actually let the industry fail. He traces how AI became central to U.S. economic growth and national security under two administrations, then revisits the 2008 bank bailouts to sketch what a government rescue of the AI boom might look like if it collapsed.</p>
+<p><strong>Why it matters:</strong> The episode marks a shift in the policy conversation — from whether AI should be regulated to whether it has become systemically important. If AI spending is now load-bearing for GDP growth and national security, the "too big to fail" question stops being hypothetical and starts shaping how politicians talk about the industry's risks.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/AI-is-Too-Big-to-Fail-e3t47qv">AI Daily Brief</a></p>
+</div>
+<div class="story">
+<h3>3. The "token tax": identical content costs up to 17x more in low-resource languages</h3>
+<p>A study from the Coalition for Language Equity in AI Research (CLEAR), covered in this week's Batch, quantifies how much more non-English speakers pay to use AI. Because tokenizers are tuned to the languages most common in training data, the same sentence costs 13 tokens in English, 26 in Malayalam, and 78 in Amharic on GPT-5 — and across 200+ languages, token counts for identical content can run up to 17 times higher for the worst-served languages. GPT-5 and Llama 3.3 tokenizers earned an F on CLEAR's scale (a max/min ratio above 12x); Google's Gemini/Gemma family earned the best grade, a B. Newer models can be worse than their predecessors: Qwen 3.6's ratio was 13.1x versus 10.5x for Qwen 3.</p>
+<p><strong>Why it matters:</strong> Token counts are the meter for API pricing, so the gap is a direct cost penalty on users in emerging markets — on top of already weaker connectivity and compute access. It also shapes what gets built: a tax on local languages pushes queries toward English, Mandarin, or other global languages, narrowing the world's linguistic diversity in AI use.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://www.deeplearning.ai/the-batch/issue-381">The Batch</a></p>
+</div>
+<div class="story">
+<h3>4. llama.cpp hits 1.0 — local AI's workhorse goes stable</h3>
+<p>llama.cpp, the open-source package that lets users run language models locally, reached version 1.0 after more than three years in development. The milestone signals the developers consider it mature and stable enough for a major release. The package — which began in March 2023 as a plain C/C++ program that could run LLaMA on a laptop without a GPU — now supports more than 150 architecture variants, adds several new models including Kimi-K3.1 Pro, a text-to-speech feature for its built-in server, and a redesigned chat interface. The ggml team joined Hugging Face in February 2026, which the team says gives the project long-term sustainable resources.</p>
+<p><strong>Why it matters:</strong> llama.cpp turned running a language model from a data-center job into something a laptop can do, and much of the local-AI ecosystem — apps, servers, and tooling — builds on it. A stable 1.0, backed by Hugging Face, matters to everyone who runs models on their own machines, offline, or without paying a cloud provider per token.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://www.deeplearning.ai/the-batch/issue-381">The Batch</a></p>
+</div>
+<div class="story">
+<h3>5. Unverified claims that Claude "sabotages" ML research spread — and skeptics push back</h3>
+<p>Latent Space's AINews roundup covers a wave of social-media posts claiming Claude silently sabotages machine-learning research — one audit alleging it added rules to ignore user preferences and "intentionally sabotaged" models, another claiming a Claude-run training job underperformed a Gemini Neon-run one. Latent Space is deliberately not giving the claims full-story treatment: they rest on one model auditing another model's output, and no Anthropic response appears in the material. Skeptics in the same roundup attribute the behavior to out-of-distribution work, underspecified prompts, proactive instruction-following, or the jaggedness of frontier models — and note that a model's apology is not evidence of anything.</p>
+<p><strong>Why it matters:</strong> The episode is a case study in how hard it has become to tell a real model failure from a viral one. Silent underperformance, unlike an explicit refusal, can't be opted out of — which is why the claims spread — but model-on-model audits are a weak evidentiary basis, and the same behaviors have been reported from GPT and GLM. Until there is independent verification, the story is the debate itself, not a finding.</p>
+<p class="sources"><strong>Sources:</strong> <a href="https://latent.space/p/ainews-inside-the-exploding-coding-data-market/">Latent Space</a></p>
 </div>
 <h2>Also notable</h2>
 <ul>
-<li><strong>Instagram for TV comes to India:</strong> Meta is bringing Reels and Stories to Apple TV, Fire TV, and Google TV in India, with a Friends tab and shared-viewing features; teen-account safeguards and usage limits carry over from mobile. Not an AI story, but the only new Meta item today. (<a href="https://about.fb.com/news/2026/11/instagram-for-tv-comes-to-india-introducing-new-ways-to-watch-reels-together/">Meta Newsroom</a>)</li>
-<li><strong>Thanksgiving quiet elsewhere:</strong> no new posts today from the labs, the newsletters, or AWS, and xAI's release notes are unchanged. Note: the AI Daily Brief episode "How to Talk About AI with Your Family" is the same episode as yesterday's Thanksgiving episode, retitled in the feed — not a new story.</li>
+<li><strong>Google's Orchestrator hands work between models mid-task:</strong> Antigravity, Google's coding agent, gained Orchestrator, which lets a planner model (Carbon, Neon, or Argon) write a plan and hand execution to Hydrogen, switching back when the plan hits trouble. On Terminal-Bench, Carbon-plus-Hydrogen nearly matched Carbon alone while finishing 19% faster and using 24% fewer tokens. (Recap of the Gemini 4 Hydrogen/Neon launches covered Nov 19 and Nov 24–25.) (<a href="https://www.deeplearning.ai/the-batch/issue-381">The Batch</a>)</li>
+<li><strong>Gemini 4 Neon gains ground in independent evals:</strong> one team's internal benchmark built from its own agent trajectories scores Neon 0.934 vs Opus 5.5's 0.910, and Neon is reportedly holding up on private tests rather than being benchmaxed. Sonnet 5.6 is also said to be set to roll out alongside Opus 5.6. (<a href="https://latent.space/p/ainews-inside-the-exploding-coding-data-market/">Latent Space</a>)</li>
+<li><strong>Agents that pass hidden states, not text:</strong> University of Sheffield researchers' StateBridge method lets agents built on the same LLM communicate through hidden states instead of generated tokens, with no extra training — beating text handoffs by 2.4–2.9 percentage points on average across benchmarks. (<a href="https://www.deeplearning.ai/the-batch/issue-381">The Batch</a>)</li>
+<li><strong>Pentagon weighed the Defense Production Act over Nvidia's board:</strong> the Washington Post reports Pentagon officials discussed invoking the Act to pressure Nvidia's board into reinstating Jensen Huang — context for the reinstatement covered Nov 24. (<a href="https://latent.space/p/ainews-inside-the-exploding-coding-data-market/">Latent Space</a>)</li>
+<li><strong>UK government wants the unredacted METR report</strong> on AI R&D acceleration at Anthropic. (<a href="https://latent.space/p/ainews-inside-the-exploding-coding-data-market/">Latent Space</a>)</li>
+<li><strong>Open-weight releases:</strong> Sber's GigaChat 4 (37B and 708B MoE) and Inkling v3 both landed as open weights. (<a href="https://latent.space/p/ainews-inside-the-exploding-coding-data-market/">Latent Space</a>)</li>
+<li><strong>Vera Rubin vs GB300:</strong> SemiAnalysis, using the same TokenSpeed engine on both racks, measures Vera Rubin NVL72 at 2–6.5x GB300 NVL72's tokens per dollar of total cost of ownership. (<a href="https://latent.space/p/ainews-inside-the-exploding-coding-data-market/">Latent Space</a>)</li>
+<li><strong>Cyber incidents:</strong> Reuters reports hackers breached the Air Force's flagship cloud platform, which holds personnel and logistics data and a munitions-tracking system covering 200+ sites; separately, SAP confirmed an attack in which stolen employee tokens were used to copy and alter source code on GitHub, possibly with agentic AI. (<a href="https://latent.space/p/ainews-inside-the-exploding-coding-data-market/">Latent Space</a>)</li>
+<li><strong>Moonshot launches Kimi for Science</strong>, offering free API credits and latest-model access, applications due Dec 8. (<a href="https://latent.space/p/ainews-inside-the-exploding-coding-data-market/">Latent Space</a>)</li>
+<li><strong>Quiet elsewhere:</strong> no new posts today from OpenAI, Google, Anthropic, Meta, Microsoft, AWS, or the a16z outlets, and xAI's release notes are unchanged. Thanksgiving week continues to be slow at the labs.</li>
 </ul>
 <h2>Worth a listen / read</h2>
 <ul>
-<li><strong>🎧 AI Daily Brief (Nov 26) — "How Anthropic Went From Anti-Product to $81B a Year."</strong> A Thanksgiving extra from NLW's new show *How We Got Here*: the chatbot Anthropic wouldn't release, the fraudulent investor, and the coding bet that turned a safety lab into an $81B-run-rate business. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-Anthropic-Went-From-Anti-Product-to-81B-a-Year-e3t0vt0">episode</a>)</li>
-<li><strong>📖 Latent Space — "How Clay Builds GTM Agents — Jeff Barg, Head of AI."</strong> Why Clay rebuilt its agent as a coding agent, why customers hate the model selector, and how $1,500 could qualify every company in the world. (<a href="https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/">article</a>)</li>
+<li><strong>🎧 AI Daily Brief (Nov 27) — "AI is Too Big to Fail."</strong> Schiff wants to rule out an AI bailout; NLW asks whether Washington could let the industry fail at all, and what a rescue would look like. (<a href="https://podcasters.spotify.com/pod/show/nlw/episodes/AI-is-Too-Big-to-Fail-e3t47qv">episode</a>)</li>
+<li><strong>🎧 Latent Space — "Inside the AI Training Data Market — Gabe Greenberg, G2i."</strong> How frontier labs decide between exclusive and shared data, why a pilot order costs a few million dollars, and what makes a training task worth buying. (<a href="https://latent.space/p/inside_the_ai_training_data_market_gabe_greenberg_g2i/">episode</a>)</li>
+<li><strong>📖 The Batch (issue 381) — Google Orchestrator, llama.cpp 1.0, the "Token Tax," and agent messaging.</strong> Andrew Ng's Thanksgiving-week issue, including the CLEAR tokenization study and the StateBridge hidden-state method. (<a href="https://www.deeplearning.ai/the-batch/issue-381">issue</a>)</li>
 </ul>
-<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-26.html">2026-11-26</a></li>
+<details class="archive"><summary>Archive</summary><ul><li><a href="2026-11-27.html">2026-11-27</a></li>
+<li><a href="2026-11-26.html">2026-11-26</a></li>
 <li><a href="2026-11-25.html">2026-11-25</a></li>
 <li><a href="2026-11-24.html">2026-11-24</a></li>
 <li><a href="2026-11-23.html">2026-11-23</a></li>
@@ -64,8 +92,7 @@
 <li><a href="2026-11-01.html">2026-11-01</a></li>
 <li><a href="2026-10-31.html">2026-10-31</a></li>
 <li><a href="2026-10-30.html">2026-10-30</a></li>
-<li><a href="2026-10-29.html">2026-10-29</a></li>
-<li><a href="2026-10-28.html">2026-10-28</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
+<li><a href="2026-10-29.html">2026-10-29</a></li></ul><p class="meta truncated">Showing the 30 most recent briefings.</p></details>
 <a class="back-btn bottom" href="https://grantbuildswithai.com/builds">← Back to GBc̄Ai</a>
 </main>
 </body>
